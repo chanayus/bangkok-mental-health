@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangkok Mental Health</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="https://cdn.twind.style/" crossorigin></script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+
+    <!-- JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./scripts/modules/main.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <main class="min-h-[54.8vh] text-lg text-light-blue main-container-sm lg:mt-[14rem] mt-[7.5rem] mb-24 space-y-16">
+      <!-- Breadcrumb -->
+      <section class="mt-8">
+        <a href="./index.html">Home</a>
+        >
+        <a href="">Services</a>
+        >
+        <a href="" class="font-bold">Depression</a>
+      </section>
+
+      <header class="flex flex-col justify-between gap-6 sm:items-center sm:flex-row">
+        <h2 class="text-5xl font-bold sm:text-6xl text-orange">Depression</h2>
+        <div class="flex items-center space-x-3 text-xl font-bold text-light-blue">
+          <div>Share</div>
+          <button>
+            <img src="./icons/line.svg" alt="" width="44" height="44" />
+          </button>
+          <button>
+            <img src="./icons/facebook.svg" alt="" width="44" height="44" />
+          </button>
+          <button>
+            <img src="./icons/twitter.svg" alt="" width="44" height="44" />
+          </button>
+        </div>
+      </header>
+
+      <figure>
+        <img src="./images/pages/depression/overview.jpg" alt="" class="object-cover w-full rounded-3xl" />
+      </figure>
+
+      <!-- Overview -->
+      <section class="space-y-4">
+        <h3 class="text-4xl font-bold">Overview</h3>
+        <p>
+          Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest in activities you once enjoyed. Depression is different from regular mood changes and feelings
+          about everyday life. It negatively affects all aspects of life, affects your feeling, thinking, behavior and can lead to a variety of emotional and physical problems, including relationships
+          with family, friends, and community. It can decrease your ability to function at work and at home and sometimes can make you feel as if life is not worth living.
+        </p>
+      </section>
+
+      <!-- Symptom -->
+      <section class="space-y-4">
+        <h3 class="text-4xl font-bold">Symptom</h3>
+        <p>Depression is different from regular mood fluctuations. They last most of the day, nearly every day, for at least two weeks. Symptoms can vary from mild to severe.</p>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Having a depressed mood, feeling sad, irritable, empty</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Loss of pleasure or interest in activities</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Changes in appetite, unintentional weight loss or gain</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Loss of sexual desire</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Loss of energy</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Aches and pains without definite physical cause</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Neglect self-care</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Trouble sleeping (insomnia) or sleeping too much</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Trouble thinking, concentrating, making decisions and remembering things</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Increase in purposeless physical activity or slowed movements or speech Feeling worthless or guilty</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Frequent or recurrent thoughts of death, suicidal thoughts, suicidal attempts or suicide</p>
+        </div>
+      </section>
+
+      <figure>
+        <img src="./images/pages/depression/symtom.jpg" alt="" class="object-cover w-full rounded-3xl" />
+      </figure>
+
+      <!-- When to see doctor -->
+      <section class="space-y-4">
+        <h3 class="text-4xl font-bold">When to see doctor</h3>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>If you have symptoms of depression every day for more than 2 weeks.</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Notice your mood affects your work, other interests, and relationships with your family and Friends Make an appointment to see doctor or mental health professional as soon as you can.</p>
+        </div>
+      </section>
+
+      <!-- When to get emergency help -->
+      <section class="space-y-4">
+        <h3 class="text-4xl font-bold">When to get emergency help</h3>
+        <p>Immediate attention is needed if a person expresses suicidal thoughts or a desire of self-harm.</p>
+      </section>
+
+      <!-- Diagnosis -->
+      <section class="space-y-4">
+        <h3 class="text-4xl font-bold">Diagnosis</h3>
+        <p>
+          Diagnostic evaluation, including an interview and a physical examination. Some medical conditions can mimic symptoms of depression, so in some cases, a blood test or other specific
+          investigation might be needed.
+        </p>
+      </section>
+
+      <figure>
+        <img src="./images/pages/depression/diagnosis.jpg" alt="" class="object-cover w-full rounded-3xl" />
+      </figure>
+
+      <!-- Treatment -->
+      <section class="space-y-4">
+        <h3 class="text-4xl font-bold">Treatment</h3>
+        <p>
+          Depression is treatable. Do not try to deal with depression on your own. If you are diagnosed with depression, do not feel ashamed, it is not a stigma. With treatment, you can manage your
+          depression symptoms.
+        </p>
+
+        <h4 class="font-bold">Treatment options;</h4>
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>If you have symptoms of depression every day for more than 2 weeks.</p>
+        </div>
+
+        <div class="flex space-x-2">
+          <img src="./icons/verify-orange.svg" alt="" class="w-6 h-fit" />
+          <p>Notice your mood affects your work, other interests, and relationships with your family and Friends Make an appointment to see doctor or mental health professional as soon as you can.</p>
+        </div>
+      </section>
+
+      <!-- Related Articles Section -->
+      <section class="space-y-14">
+        <h2 class="text-5xl font-bold text-center text-orange">Related Articles</h2>
+        <section class="grid gap-6 md:grid-cols-3">
+          <div class="space-y-3">
+            <img src="./images/pages/depression/article1.jpg" alt="" class="object-cover w-full h-[18.125rem] rounded-[2.8125rem]" />
+            <div class="text-orange">Articles</div>
+            <h5 class="text-xl font-bold">The Most Fasicnating Exeperince To Overcome Sadness</h5>
+            <p class="line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          </div>
+          <div class="space-y-3">
+            <img src="./images/pages/depression/article2.jpg" alt="" class="object-cover w-full h-[18.125rem] rounded-[2.8125rem]" />
+            <div class="text-orange">News</div>
+            <h5 class="text-xl font-bold">The Most Fasicnating Exeperince To Overcome Sadness</h5>
+            <p class="line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          </div>
+          <div class="space-y-3">
+            <img src="./images/pages/depression/article3.jpg" alt="" class="object-cover w-full h-[18.125rem] rounded-[2.8125rem]" />
+            <div class="text-orange">News</div>
+            <h5 class="text-xl font-bold">The Most Fasicnating Exeperince To Overcome Sadness</h5>
+            <p class="line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          </div>
+        </section>
+      </section>
+      <a href="" class="block mx-auto btn-orange-border w-fit">More Articles</a>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

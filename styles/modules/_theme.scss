@@ -1,0 +1,128 @@
+$deep-blue: #1e697d;
+$light-blue: #4da9c2;
+$light-gray: #f5f9fd;
+$orange: #ffa941;
+$cream: #fff8e7;
+$orange-gradient: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+$orange-radial-gradient: radial-gradient(
+        89.87% 89.87% at 50.06% 30.06%,
+        rgba(255, 255, 255, 0) 3.94%,
+        rgba(255, 255, 255, 0.66) 13.55%,
+        rgba(255, 255, 255, 0.33) 24.59%,
+        rgba(255, 255, 255, 0) 42.19%
+    ),
+    linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
+
+$colors: (
+    "deep-blue": $deep-blue,
+    "light-blue": $light-blue,
+    "light-gray": $light-gray,
+    "orange": $orange,
+    "cream": $cream,
+    "orange-gradient": $orange-gradient,
+    "orange-radial-gradient": $orange-radial-gradient,
+);
+
+@each $key, $value in $colors {
+    .text-#{$key} {
+        color: $value;
+    }
+    .bg-#{$key} {
+        background: $value;
+    }
+    .accent-#{$key} {
+        accent-color: $value;
+    }
+    .border-#{$key} {
+        border-color: $value;
+    }
+}
+.btn-orange {
+    position: relative;
+    background: $orange-gradient;
+    padding: 0.6875rem 2rem;
+    border-radius: 9999px;
+    color: #fff;
+    transition: background-color 0.15s;
+    z-index: 1;
+    overflow: hidden;
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $deep-blue;
+        border-radius: 9999px;
+        left: 0;
+        top: 0;
+        transition: opacity 0.1s;
+    }
+}
+
+.btn-orange-border {
+    position: relative;
+    background: transparent;
+    border: 1px solid $orange;
+    padding: 0.6875rem 2rem;
+    border-radius: 9999px;
+    color: $orange;
+    transition: background-color 0.15s;
+    z-index: 1;
+    overflow: hidden;
+    &:hover {
+        color: #FFF;
+        &::before {
+            opacity: 1;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $orange;
+        border-radius: 9999px;
+        left: 0;
+        top: 0;
+        transition: opacity 0.1s;
+    }
+}
+
+.btn-transparent {
+    background: transparent;
+    padding: 0.6875rem 2rem;
+    border-radius: 9999px;
+    color: $orange;
+    border: 1px solid #f6f6f6;
+    transition: background-color 0.15s;
+    &:hover {
+        background: $deep-blue;
+        color: #fff;
+    }
+}
+
+.orange-link {
+    color: $orange;
+    transition: color 0.1s;
+    &:hover {
+        color: $deep-blue;
+    }
+}
+
+.deep-blue-link {
+    color: $deep-blue;
+    transition: color 0.1s;
+    &:hover {
+        color: $orange;
+    }
+}
