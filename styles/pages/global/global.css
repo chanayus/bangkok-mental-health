@@ -95,19 +95,19 @@
 }
 
 .text-orange-radial-gradient {
-  color: radial-gradient(89.87% 89.87% at 50.06% 30.06%, rgba(255, 255, 255, 0) 3.94%, rgba(255, 255, 255, 0.66) 13.55%, rgba(255, 255, 255, 0.33) 24.59%, rgba(255, 255, 255, 0) 42.19%), linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
+  color: linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
 }
 
 .bg-orange-radial-gradient {
-  background: radial-gradient(89.87% 89.87% at 50.06% 30.06%, rgba(255, 255, 255, 0) 3.94%, rgba(255, 255, 255, 0.66) 13.55%, rgba(255, 255, 255, 0.33) 24.59%, rgba(255, 255, 255, 0) 42.19%), linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
+  background: linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
 }
 
 .accent-orange-radial-gradient {
-  accent-color: radial-gradient(89.87% 89.87% at 50.06% 30.06%, rgba(255, 255, 255, 0) 3.94%, rgba(255, 255, 255, 0.66) 13.55%, rgba(255, 255, 255, 0.33) 24.59%, rgba(255, 255, 255, 0) 42.19%), linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
+  accent-color: linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
 }
 
 .border-orange-radial-gradient {
-  border-color: radial-gradient(89.87% 89.87% at 50.06% 30.06%, rgba(255, 255, 255, 0) 3.94%, rgba(255, 255, 255, 0.66) 13.55%, rgba(255, 255, 255, 0.33) 24.59%, rgba(255, 255, 255, 0) 42.19%), linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
+  border-color: linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
 }
 
 .btn-orange {
@@ -149,7 +149,7 @@
   overflow: hidden;
 }
 .btn-orange-border:hover {
-  color: #FFF;
+  color: #fff;
 }
 .btn-orange-border:hover::before {
   opacity: 1;

@@ -4,14 +4,7 @@ $light-gray: #f5f9fd;
 $orange: #ffa941;
 $cream: #fff8e7;
 $orange-gradient: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
-$orange-radial-gradient: radial-gradient(
-        89.87% 89.87% at 50.06% 30.06%,
-        rgba(255, 255, 255, 0) 3.94%,
-        rgba(255, 255, 255, 0.66) 13.55%,
-        rgba(255, 255, 255, 0.33) 24.59%,
-        rgba(255, 255, 255, 0) 42.19%
-    ),
-    linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%),
+$orange-radial-gradient: linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
 
 $colors: (
@@ -78,7 +71,7 @@ $colors: (
     z-index: 1;
     overflow: hidden;
     &:hover {
-        color: #FFF;
+        color: #fff;
         &::before {
             opacity: 1;
         }

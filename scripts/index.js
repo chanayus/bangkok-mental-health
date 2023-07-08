@@ -10,35 +10,55 @@ const initAnimation = () => {
     gsap.fromTo(element, { y: 0 }, { y: 15, duration: 2 + index * 0.5, repeat: -1, ease: "none", yoyo: true });
   });
 
-  gsap.fromTo(
-    ".service-icon",
-    { autoAlpha: 0, y: 50 },
-    {
-      autoAlpha: 1,
-      stagger: 0.2,
-      y: 0,
-      scrollTrigger: {
-        trigger: "#services-section",
-        start: "15% 50%",
-        end: "15% 50%",
-      },
-    }
-  );
-
-  gsap.fromTo(
-    ".service-text",
-    { autoAlpha: 0 },
-    {
-      autoAlpha: 1,
-      delay: 0.35,
-      stagger: 0.2,
+  gsap
+    .timeline({
       scrollTrigger: {
         trigger: "#services-section",
         start: "20% 50%",
         end: "20% 50%",
       },
-    }
-  );
+    })
+    .fromTo(
+      ".service-card",
+      { autoAlpha: 0, y: 50 },
+      {
+        autoAlpha: 1,
+        stagger: 0.2,
+        y: 0,
+        ease: "expo",
+      }
+    )
+    .fromTo(
+      ".service-icon",
+      { autoAlpha: 0, y: 50 },
+      {
+        autoAlpha: 1,
+        stagger: 0.2,
+        y: 0,
+        ease: "expo",
+      },
+      "-=0.35"
+    )
+    .fromTo(
+      ".service-backdrop",
+      { autoAlpha: 0 },
+      {
+        autoAlpha: 1,
+        stagger: 0.2,
+        ease: "none",
+      }
+    )
+    .fromTo(
+      ".service-text",
+      { autoAlpha: 0 },
+      {
+        autoAlpha: 1,
+        stagger: 0.2,
+        ease: "none",
+        duration: 0.2,
+      },
+      "-=1"
+    );
 };
 
 const initSlide = () => {
