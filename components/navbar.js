@@ -120,13 +120,13 @@ class Navbar extends HTMLElement {
 
     <!-- Mobile Side Navigation -->
     <section id="side-nav-wrapper" class=" opacity-0 fixed w-full h-full bg-[rgba(103,195,221,0.5)] z-40 top-0 flex justify-end">
-        <aside id="side-nav" class="relative w-full h-full p-10 overflow-y-auto bg-white md:w-1/2 xl:max-w-[30vw]">
+        <aside id="side-nav" class="relative w-full h-full p-10 overflow-y-auto bg-white md:w-1/2 xl:max-w-[40vw]">
         <button id="close-side-nav-button" class="absolute right-10">
             <img src="./icons/close-blue.svg" alt="" width="32" />
         </button>
-        <section class="border-b pb-8 mb-8 text-light-blue [&_*]:font-medium flex flex-col text-2xl whitespace-nowrap space-y-10">
-            <a href="">Home</a>
-            <a href="">About us</a>
+        <section class="border-b pb-8 mb-8 text-light-blue [&_*]:font-medium flex flex-col text-xl whitespace-nowrap space-y-10">
+            <a href="../index.html">Home</a>
+            <a href="../about-us.html">About us</a>
             <div class="collapsible">
                 <button>
                     Guides to care
@@ -148,7 +148,7 @@ class Navbar extends HTMLElement {
                 </button>
                 <div class="collapsible-content-wrapper">
                     <div class="collapsible-content gap-y-6">
-                    <a href="">Outpatient Services</a>
+                    <a href="../outpatient-services.html">Outpatient Services</a>
                     <a href="">Inpatient Services</a>
                     <a href="">Child Development Program</a>
                     <a href="">Daily Activities</a>
@@ -165,8 +165,15 @@ class Navbar extends HTMLElement {
                 </button>
                 <div class="collapsible-content-wrapper">
                     <div class="collapsible-content gap-y-6">
-                    <a href="">Treatment by Age</a>
-                    <a href="">Treatment by Condition</a>
+                        <a href="../depression.html" >Depression</a>
+                        <a href="">Generalised Anxiety Disorder</a>
+                        <a href="">Schizophrenia</a>
+                        <a href="">Bipolar</a>
+                        <a href="">Dementia</a>
+                        <a href="">Autistic Spectrum Disorder</a>
+                        <a href="">Attention Deficit Hyperactivity Disorder (ADHD)</a>
+                        <a href="">Panic Disorder</a>
+                        <a href="">Post-traumatic Stress Disorder (PTSD)</a>
                     </div>
                 </div>
             </div>

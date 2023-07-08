@@ -176,6 +176,9 @@ footer {
         flex-direction: column;
         a {
             padding-left: 1.25rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }

@@ -725,4 +725,7 @@ footer .social-link a:hover {
 }
 .collapsible .collapsible-content a {
   padding-left: 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }/*# sourceMappingURL=global.css.map */

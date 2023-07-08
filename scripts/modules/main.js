@@ -52,3 +52,4 @@ document.querySelector("#open-side-nav-button").addEventListener("click", openSi
 document.querySelector("#close-side-nav-button").addEventListener("click", closeSideMobileNav);
 
 closeSideMobileNav();
+addCollapsibleButtonsEvent();
