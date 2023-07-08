@@ -8,7 +8,7 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
     <!-- Top Navigation Bar -->
-    <nav id="top-nav" class="fixed top-0 z-50 w-full px-5 xl:px-8">
+    <nav id="top-nav" class="fixed top-0 z-30 w-full px-5 xl:px-8">
         <section class="flex items-center justify-between py-4 border-b">
         <a href="../index.html">
             <img src="./images/logo.png" alt="" width="200" height="60" class="max-w-[35vw]" />
@@ -119,7 +119,7 @@ class Navbar extends HTMLElement {
     </nav>
 
     <!-- Mobile Side Navigation -->
-    <section id="side-nav-wrapper" class="opacity-0 fixed w-full h-full bg-[rgba(103,195,221,0.5)] z-40 top-0 flex justify-end">
+    <section id="side-nav-wrapper" class=" opacity-0 fixed w-full h-full bg-[rgba(103,195,221,0.5)] z-40 top-0 flex justify-end">
         <aside id="side-nav" class="relative w-full h-full p-10 overflow-y-auto bg-white md:w-1/2 xl:max-w-[30vw]">
         <button id="close-side-nav-button" class="absolute right-10">
             <img src="./icons/close-blue.svg" alt="" width="32" />

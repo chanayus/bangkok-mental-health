@@ -10,24 +10,22 @@ const hideNavbar = () => {
   gsap.to(topNav, { y: "-100%", duration: 0.1, ease: "none" });
 };
 
-const addNavbarScrollEvent = () => {
-  window.addEventListener("scroll", () => {
-    gsap.to(topNav, {
-      backgroundColor: window.scrollY <= 0 ? "transparent" : "rgba(255,255,255,1)",
-      duration: 0.2,
-      delay: 0,
-      ease: "none",
-    });
-
-    if (window.scrollY < prevScrollY || window.scrollY <= 0) {
-      showNavbar();
-    } else {
-      hideNavbar();
-    }
-
-    prevScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+  gsap.to(topNav, {
+    backgroundColor: window.scrollY <= 0 ? "transparent" : "rgba(255,255,255,1)",
+    duration: 0.2,
+    delay: 0,
+    ease: "none",
   });
-};
+
+  if (window.scrollY < prevScrollY || window.scrollY <= 0) {
+    showNavbar();
+  } else {
+    hideNavbar();
+  }
+
+  prevScrollY = window.scrollY;
+});
 
 const openSideMobileNav = () => {
   document.body.style.overflow = "hidden";
@@ -53,4 +51,4 @@ const addCollapsibleButtonsEvent = () => {
 document.querySelector("#open-side-nav-button").addEventListener("click", openSideMobileNav);
 document.querySelector("#close-side-nav-button").addEventListener("click", closeSideMobileNav);
 
-addNavbarScrollEvent();
+closeSideMobileNav();
