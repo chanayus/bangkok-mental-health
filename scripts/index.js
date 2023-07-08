@@ -12,11 +12,11 @@ const initAnimation = () => {
 
   gsap.fromTo(
     ".service-icon",
-    { autoAlpha: 0, filter: "blur(5px)" },
+    { autoAlpha: 0, y: 50 },
     {
       autoAlpha: 1,
       stagger: 0.2,
-      filter: "blur(0px)",
+      y: 0,
       scrollTrigger: {
         trigger: "#services-section",
         start: "15% 50%",
@@ -27,10 +27,9 @@ const initAnimation = () => {
 
   gsap.fromTo(
     ".service-text",
-    { autoAlpha: 0, filter: "blur(5px)" },
+    { autoAlpha: 0 },
     {
       autoAlpha: 1,
-      filter: "blur(0px)",
       delay: 0.35,
       stagger: 0.2,
       scrollTrigger: {
