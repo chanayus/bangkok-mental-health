@@ -122,8 +122,8 @@ class Navbar extends HTMLElement {
     <section id="side-nav-wrapper" class=" opacity-0 fixed w-full h-full bg-[rgba(103,195,221,0.5)] z-40 top-0 flex justify-end">
         <aside id="side-nav" class="relative w-full h-full p-10 overflow-y-auto bg-white md:w-1/2 xl:max-w-[40vw]">
         <button id="close-side-nav-button" class="absolute top-5 right-10 p-2 z-10">
-        <img src="./icons/close-blue.svg" alt="" width="32" />
-    </button>
+            <img src="./icons/close-blue.svg" alt="" width="32" />
+        </button>
         <section class="border-b pb-8 mb-8 text-light-blue [&_*]:font-medium flex flex-col text-xl whitespace-nowrap space-y-10">
             <a href="../index.html">Home</a>
             <a href="../about-us.html">About us</a>
