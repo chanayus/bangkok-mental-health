@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
     <nav id="top-nav" class="fixed top-0 z-30 w-full px-5 xl:px-8">
         <section class="flex items-center justify-between py-4 border-b">
         <a href="../index.html">
-            <img src="./images/logo.png" alt="" width="200" height="60" class="max-w-[35vw] object-contain" />
+            <img src="./images/logo.png" alt="" width="260" height="63" class="w-[200px] max-w-[35vw]" />
         </a>
         <!-- Desktop -->
         <div class="items-center hidden xl:flex gap-x-4">
