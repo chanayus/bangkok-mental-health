@@ -54,6 +54,8 @@ document.querySelector("#close-side-nav-button").addEventListener("click", close
 closeSideMobileNav();
 addCollapsibleButtonsEvent();
 
+// Page Transition
+
 const links = document.querySelectorAll("a");
 const main = document.querySelector("main");
 
