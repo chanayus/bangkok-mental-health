@@ -65,7 +65,7 @@ if (links && main) {
       e.preventDefault();
       setTimeout(() => {
         if (main.classList.contains("fade-out")) {
-          window.location = e.target.href;
+          window.location = e.target.parentElement.href ?? e.target.href;
         }
       }, 350);
       main.classList.add("fade-out");
