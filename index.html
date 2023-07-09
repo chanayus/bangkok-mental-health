@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
     <script src="https://cdn.twind.style/" crossorigin></script>
@@ -30,13 +30,14 @@
 
     <!-- JS -->
     <script
+      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="./scripts/index.js"></script>
     <script type="module" src="./scripts/modules/main.js"></script>
   </head>
@@ -56,8 +57,10 @@
           </div>
 
           <div class="flex-[1.25] min-h-[40vh] overflow-hidden h-[calc(100vh-11rem)] shrink-0 flex w-full self-end relative [&_img]:absolute [&_img]:opacity-0 [&_img]:bottom-0">
-            <img id="bg-hero" src="./images/pages/index/bg-hero.webp" alt="" class="object-contain object-bottom w-full h-full" />
+            <img id="bg-hero" src="./images/pages/index/bg-hero.svg" alt="" class="object-contain object-bottom w-full h-full" />
+
             <img id="human" src="./images/pages/index/human.webp" alt="" class="object-contain object-bottom w-full h-full" />
+
             <img src="./images/pages/index/brain.webp" alt="" class="object-contain object-bottom w-full h-full hero-icon" />
             <img src="./images/pages/index/cloud.webp" alt="" class="object-contain object-bottom w-full h-full hero-icon" />
             <img src="./images/pages/index/heart.webp" alt="" class="object-contain object-bottom w-full h-full hero-icon" />
@@ -123,7 +126,7 @@
       <section id="services-section" class="relative py-28">
         <section class="relative z-10 flex flex-col gap-8 text-center text-white main-container-sm lg:flex-row">
           <div class="relative flex-1 py-20 service-card sm:px-14 px-7 bg-orange-radial-gradient rounded-3xl">
-            <div class="absolute top-0 left-0 w-full service-backdrop aspect-square bg-radial-white h-3/5"></div>
+            <div class="absolute top-0 left-0 w-full service-backdrop aspect-square bg-radial-white h-4/6"></div>
             <img src="./images/pages/index/service1.webp" alt="" class="service-icon relative z-10 mb-10 max-w-[18rem] max-h-[18.75rem] object-contain h-full w-full mx-auto" />
             <div class="service-text">
               <h4 class="mb-6 text-2xl font-bold md:text-3xl">An all-encompassing guide to mental health care.</h4>
@@ -135,7 +138,7 @@
             </div>
           </div>
           <div class="relative flex-1 py-20 service-card sm:px-14 px-7 bg-orange-radial-gradient rounded-3xl">
-            <div class="absolute top-0 left-0 w-full service-backdrop bg-radial-white h-3/5"></div>
+            <div class="absolute top-0 left-0 w-full service-backdrop bg-radial-white h-4/6"></div>
             <img src="./images/pages/index/service2.webp" alt="" class="service-icon relative z-10 bg-radial-white mb-10 max-w-[18rem] max-h-[18.75rem] object-contain h-full w-full mx-auto" />
             <div class="service-text">
               <h2 class="mb-6 text-2xl font-bold md:text-3xl">
@@ -245,7 +248,7 @@
           <img src="./images/pages/index/video.webp" alt="" class="object-cover w-full h-full" />
         </div>
         <div class="py-8 bg-cream">
-          <div class="flex justify-center text-xl font-medium main-container-sm text-deep-blue">
+          <div class="flex justify-center text-xl font-medium main-container-sm text-light-blue">
             <div class="flex flex-col mx-auto md:flex-row md:w-full space gap-y-10 justify-evenly">
               <div class="flex items-center w-fit"><img src="./icons/verify-orange.svg" width="24" height="24" alt="" class="mb-1 mr-2" /> 30+ years of experience</div>
               <div class="flex items-center w-fit"><img src="./icons/verify-orange.svg" width="24" height="24" alt="" class="mb-1 mr-2" /> Urgent 24-hour service</div>
