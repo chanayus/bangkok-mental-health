@@ -55,23 +55,18 @@ closeSideMobileNav();
 addCollapsibleButtonsEvent();
 
 const links = document.querySelectorAll("a");
-if (links) {
+const main = document.querySelector("main");
+
+if (links && main) {
   links.forEach((link) => {
     link.onclick = (e) => {
-      let body = document.querySelector("main");
-      console.log(body);
       e.preventDefault();
-
       setTimeout(() => {
-        if (body.classList.contains("fade-out")) {
-          if (!e.srcElement.parentElement.href) {
-            window.location = e.srcElement.href;
-          } else {
-            window.location = e.srcElement.parentElement.href;
-          }
+        if (main.classList.contains("fade-out")) {
+          window.location = e.target.href;
         }
       }, 350);
-      body.classList.add("fade-out");
+      main.classList.add("fade-out");
     };
   });
 }
