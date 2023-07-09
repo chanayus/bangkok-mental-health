@@ -61,7 +61,7 @@ const main = document.querySelector("main");
 
 if (links && main) {
   links.forEach((link) => {
-    link.onclick = (e) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
       setTimeout(() => {
         if (main.classList.contains("fade-out")) {
@@ -69,6 +69,6 @@ if (links && main) {
         }
       }, 350);
       main.classList.add("fade-out");
-    };
+    });
   });
 }
