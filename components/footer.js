@@ -23,9 +23,9 @@ class Footer extends HTMLElement {
             <section class="mx-auto flex justify-between text-lg py-8 gap-x-16 gap-y-8 flex-wrap [&_a]:font-medium [&_div:not(:last-of-type)_a]:opacity-60 [&_div:not(:last-of-type)_a:hover]:opacity-100">
                 <div class="flex flex-col gap-y-2 shrink-0">
                 <div class="text-2xl font-bold">Menu</div>
-                <a href="../index.html">Home</a>
-                <a href="../about-us.html">About US</a>
-                <a href="">Guides to care</a>
+                <a href="../index.html" class="${pathname === "/index.html" ? "!opacity-100" : ""}">Home</a>
+                <a href="../about-us.html" class="${pathname === "/about-us.html" ? "!opacity-100" : ""}">About US</a>
+                <a href="../guide-to-care.html" class="${pathname === "/guide-to-care.html" ? "!opacity-100" : ""}">Guides to care</a>
                 </div>
                 <div class="flex flex-col justify-end gap-y-2 shrink-0">
                 <a href="">Hospital services</a>
