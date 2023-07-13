@@ -779,14 +779,45 @@ main {
   animation: fade-in 0.5s forwards;
 }
 
-@media (min-width: 1440px) {
-  #complete-case-slide .splide__list > a:nth-of-type(3n) {
-    transform: translateY(0.625rem);
-  }
-  #complete-case-slide .splide__list > a:nth-of-type(2n) {
-    transform: translateY(1.5rem);
-  }
+article .collapsible.active button {
+  color: #ffa941;
+  background: #fff8e7;
 }
-.bg-radial-white {
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 50%);
-}/*# sourceMappingURL=index.css.map */
+
+aside .collapsible.active .collapsible-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.sub-menu-wrapper {
+  position: relative;
+}
+.sub-menu-wrapper:hover .sub-menu {
+  display: flex;
+}
+.sub-menu-wrapper .sub-menu {
+  background: #4da9c2;
+  display: none;
+  transition: opacity 0.1s;
+  flex-direction: column;
+  position: absolute;
+  min-width: 100%;
+  top: calc(100% + 3px);
+  left: 0;
+}
+.sub-menu-wrapper .sub-menu a {
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 1rem 0.875rem;
+  transition: background-color 0.1s;
+}
+.sub-menu-wrapper .sub-menu a:hover, .sub-menu-wrapper .sub-menu a.active {
+  background: #1e697d;
+}
+
+.room-category-button:is(.btn-orange) {
+  font-weight: 700;
+}
+.room-category-button:is(.btn-orange):hover::before {
+  opacity: 0;
+}/*# sourceMappingURL=admission-guide.css.map */

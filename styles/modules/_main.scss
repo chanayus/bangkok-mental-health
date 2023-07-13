@@ -16,10 +16,12 @@
     box-sizing: border-box;
     outline: none;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 html {
     font-size: clamp(14px, 1vw, 16px);
+    scroll-padding-top: 12rem;
 }
 
 .main-container {
@@ -91,15 +93,18 @@ nav {
     }
     .sub-menu-wrapper {
         position: relative;
-
         &:hover {
             .sub-menu {
-                display: flex;
+                pointer-events: all;
+                opacity: 1;
             }
         }
         .sub-menu {
             background: $light-blue;
-            display: none;
+            display: flex;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.1s;
             flex-direction: column;
             position: absolute;
             min-width: 100%;
@@ -109,6 +114,7 @@ nav {
                 color: #fff;
                 font-size: 0.875rem;
                 padding: 1rem 0.875rem;
+                transition: background-color 0.1s;
                 &:hover,
                 &.active {
                     background: $deep-blue;
@@ -150,12 +156,24 @@ footer {
     text-align: left;
     justify-items: start;
 
+    & > button,
+    & > button > i {
+        transition:
+            color 0.25s,
+            background-color 0.25s,
+            transform 0.25s;
+    }
     & > button:hover {
         color: $orange !important;
     }
+    & > button * {
+        pointer-events: none;
+    }
     .collapsible-content-wrapper {
         display: grid;
-        transition: grid-template-rows 0.35s, margin-top 0.35s;
+        transition:
+            grid-template-rows 0.35s,
+            margin-top 0.35s;
     }
     &.active {
         button {
@@ -164,6 +182,10 @@ footer {
         .collapsible-content-wrapper {
             grid-template-rows: 1fr;
             margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        i {
+            transform: rotate(180deg);
         }
     }
     &:not(.active) {

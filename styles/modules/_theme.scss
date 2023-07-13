@@ -14,7 +14,7 @@ $colors: (
     "orange": $orange,
     "cream": $cream,
     "orange-gradient": $orange-gradient,
-    "orange-radial-gradient": $orange-radial-gradient,
+    "orange-radial-gradient": $orange-radial-gradient
 );
 
 @each $key, $value in $colors {
@@ -114,6 +114,14 @@ $colors: (
 
 .deep-blue-link {
     color: $deep-blue;
+    transition: color 0.1s;
+    &:hover {
+        color: $orange;
+    }
+}
+
+.light-blue-link {
+    color: $light-blue;
     transition: color 0.1s;
     &:hover {
         color: $orange;

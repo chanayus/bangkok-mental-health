@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+    <title>Bangkok Mental Health</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="https://cdn.twind.style/" crossorigin></script>
+    <!-- <script src="https://cdn.twind.style/" crossorigin></script> -->
+    <link rel="stylesheet" href="./styles/pages/admission-guide/admission-guide.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./scripts/modules/main.js"></script>
+    <script type="module" src="./scripts/admission-guide.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <main class="min-h-[54.8vh] relative text-lg text-light-blue xl:mt-[14rem] mt-[7.5rem]">
+      <div class="space-y-16 main-container-sm">
+        <!-- Breadcrumb -->
+        <section class="mt-8">
+          <a href="./index.html">Home</a>
+          >
+          <a href="./guide-to-care.html" class="">Guides to care</a>
+          >
+          <a href="" class="font-bold">Admission guide</a>
+        </section>
+
+        <header class="space-y-4 text-center">
+          <h5 class="text-xl">Guides to care</h5>
+          <h2 class="text-4xl font-bold text-orange">Admission guide</h2>
+        </header>
+
+        <section class="space-y-14">
+          <div class="[&_button]:shrink-0 [&_button]:px-8 [&_button]:py-[0.6875rem] flex overflow-x-auto overflow-y-hidden md:justify-center whitespace-nowrap gap-x-0">
+            <button data-category="all" class="room-category-button">View all</button>
+            <button data-category="suite" class="room-category-button">Suite room</button>
+            <button data-category="corner" class="room-category-button">Corner room</button>
+            <button data-category="standard" class="room-category-button">Standard room</button>
+          </div>
+          <div class="grid md:grid-cols-2 gap-9">
+            <div data-category="suite" class="room-card overflow-hidden shadow-lg rounded-3xl shadow-[#f0f0f0]">
+              <img src="./images/pages/admission-guide/suite.webp" alt="" />
+              <div class="py-4 text-xl font-bold text-center">Suite room</div>
+            </div>
+
+            <div data-category="corner" class="room-card overflow-hidden shadow-lg rounded-3xl shadow-[#f0f0f0]">
+              <img src="./images/pages/admission-guide/corner.webp" alt="" />
+              <div class="py-4 text-xl font-bold text-center">Corner room</div>
+            </div>
+
+            <div data-category="standard" class="room-card overflow-hidden shadow-lg rounded-3xl shadow-[#f0f0f0]">
+              <img src="./images/pages/admission-guide/standard.webp" alt="" />
+              <div class="py-4 text-xl font-bold text-center">Standard room</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="flex flex-col-reverse gap-12 lg:flex-row pb-28">
+          <article class="space-y-12">
+            <!-- Inpatient Care -->
+            <section class="space-y-4" id="inpatient-care">
+              <h2 class="text-3xl font-bold sm:text-4xl">Inpatient Care</h2>
+              <p>
+                The inpatient unit at Bangkok Mental Health Hospital offers assessment and treatment for a wide range of mental health conditions that are not available in general hospitals. Our
+                services include consultations and therapies tailored to address specific mental health conditions.
+                <br /><br />
+                The inpatient unit at Bangkok Mental Health Hospital uses a multidisciplinary team of healthcare professionals, such as psychiatrists, psychologists, nurses, occupational and physical
+                therapists, and case managers, to work on all aspects of patient care. Our 30-bed unit has a locked ward program and facilities for physical and occupational therapies. Our treatment
+                program is designed with a focus on maintaining the safety, dignity, and confidentiality of each individual, which are essential for providing effective treatment.
+                <br /><br />
+
+                A mental health specialist or nurse will assist you in settling into the program and your room. You can approach any inpatient staff member to seek clarification or express any
+                concerns or questions you may have.
+                <br /><br />
+                After you have been sorted into your programs, your family and friends may visit you during the visiting hours upon request. However, you may discuss any concerns with the staff in
+                charge before allowing any visits.
+                <br />
+                <br />
+                Throughout your admission at the hospital, you will be under the supervision of a multidisciplinary team of healthcare professionals, who will look after and assist you in the road to
+                your recovery.
+              </p>
+            </section>
+
+            <!-- What is the admissions process -->
+            <section class="space-y-4" id="admissions-process">
+              <h2 class="text-3xl font-bold sm:text-4xl">What is the admissions process?</h2>
+              <p>
+                The initial admission process involves taking notes and recording information for your personalized treatment plan. Once this process is complete, you will either be admitted to an
+                inpatient program or referred to the most suitable program for your care.
+                <br />
+                <br />
+                You will be requested to sign information documents, including consent forms that permit us to release your provided information to the hospital.
+              </p>
+            </section>
+
+            <!-- Medication Reconciliation -->
+            <section class="space-y-4" id="medication-reconciliation">
+              <h2 class="text-3xl font-bold sm:text-4xl">Medication Reconciliation</h2>
+              <p>
+                The initial admission process involves taking notes and recording information for your personalized treatment plan. Once this process is complete, you will either be admitted to an
+                inpatient program or referred to the most suitable program for your care.
+                <br />
+                <br />
+                You will be requested to sign information documents, including consent forms that permit us to release your provided information to the hospital.
+              </p>
+            </section>
+
+            <!-- Privacy Protection -->
+            <section class="space-y-4" id="privacy-protection">
+              <h2 class="text-3xl font-bold sm:text-4xl">Privacy Protection</h2>
+              <p>
+                To ensure accurate reviewing of your medications during the admissions, we advise bringing a complete list of your prescriptions to the hospital.
+                <br />
+                <br />
+                Taking photographs, videos, or voice recordings is not permissible at the inpatient program facility to protect the privacy of every attendees.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="mb-12 text-3xl font-bold leading-normal sm:text-4xl text-orange">
+                Personal belongings that should be brought to the hospital during your stay at the inpatient program facility:
+              </h2>
+              <div class="mb-2.5 collapsible" id="medications">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Medications</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2.5 collapsible" id="clothing">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Clothing</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2.5 collapsible" id="personal-care-items">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Personal Care Items</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2.5 collapsible" id="valuable-belongings">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Valuable Belongings</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Discouraged Items -->
+            <section id="discouraged-items">
+              <h2 class="mb-12 text-3xl font-bold sm:text-4xl">Discouraged Items</h2>
+              <div class="mb-2.5 collapsible" id="cellphones">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Cellphones</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>
+                      To enhance focus and engagement during group therapies and other treatment, use of cellphones is restricted or discouraged in some inpatient programs, while others may allow only
+                      limited usage. It is recommended that you inquire about the cellphone policies at your program with the staff.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2.5 collapsible" id="computers">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Computers</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto reiciendis nemo iste, fugiat totam sed veniam ipsa nam? Dicta nam libero neque accusantium voluptatibus tempora
+                      nulla, sint quisquam cupiditate temporibus. Eos assumenda id harum eveniet libero quas odit neque ipsa. Labore tempora, officiis magnam perferendis, ducimus obcaecati itaque
+                      accusantium quo dolore, eligendi repellendus. Sit at harum eius libero a asperiores. Beatae magni enim quas velit, sunt molestias reprehenderit in quibusdam. Dolorem rerum esse
+                      cum incidunt minus? Quis sequi ipsam nam, saepe odit perspiciatis illo nobis, vero assumenda labore dolores atque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2.5 collapsible" id="restricted-items">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Restricted Items</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Unit Regulations -->
+            <section>
+              <h2 class="mb-12 text-3xl font-bold sm:text-4xl" id="unit-regulations">Unit Regulations</h2>
+              <div class="mb-2.5 collapsible">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Visiting Hours</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>
+                      To enhance focus and engagement during group therapies and other treatment, use of cellphones is restricted or discouraged in some inpatient programs, while others may allow only
+                      limited usage. It is recommended that you inquire about the cellphone policies at your program with the staff.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2.5 collapsible">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Meals</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto reiciendis nemo iste, fugiat totam sed veniam ipsa nam? Dicta nam libero neque accusantium voluptatibus tempora
+                      nulla, sint quisquam cupiditate temporibus. Eos assumenda id harum eveniet libero quas odit neque ipsa. Labore tempora, officiis magnam perferendis, ducimus obcaecati itaque
+                      accusantium quo dolore, eligendi repellendus. Sit at harum eius libero a asperiores. Beatae magni enim quas velit, sunt molestias reprehenderit in quibusdam. Dolorem rerum esse
+                      cum incidunt minus? Quis sequi ipsam nam, saepe odit perspiciatis illo nobis, vero assumenda labore dolores atque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2.5 collapsible">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Monitoring</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2.5 collapsible">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>Interventions</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2.5 collapsible">
+                <button class="flex items-center justify-between w-full p-4 text-xl font-bold text-left text-white rounded-xl bg-light-blue">
+                  <div>I want to learn more.</div>
+                  <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="collapsible-content-wrapper">
+                  <div class="collapsible-content gap-y-6">
+                    <p>Please ensure that you bring all your daily and essential medicines with you, as we do not have medication dispensing services available.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+          <aside id="guide-list-link" class="lg:sticky relative bg-white xl:top-[10rem] mb-6 top-0 lg:p-8 p-4 text-lg font-bold shadow-xl shrink-0 h-fit rounded-lg lg:rounded-2xl">
+            <div class="collapsible lg:hidden">
+              <button class="flex items-center justify-between w-full text-xl font-bold text-left bg-white text-light-blue rounded-xl">
+                <div>Inpatient Care</div>
+                <i class="mb-1 ml-1 text-lg fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="absolute left-0 w-full bg-white rounded-lg shadow-2xl top-3/4 collapsible-content-wrapper">
+                <div class="collapsible-content gap-y-4">
+                  <a href="#inpatient-care">Inpatient Care</a>
+                  <a href="#admissions-process">What is the admissions process?</a>
+                  <a href="#medication-reconciliation">Medication Reconciliation</a>
+                  <a href="#privacy-protection">Privacy Protection</a>
+                  <a href="#medications">Medications</a>
+                  <a href="#clothing">Clothing</a>
+                  <a href="#personal-care-items">Personal Care Items</a>
+                  <a href="#valuable-belongings">Valuable Belongings</a>
+                  <a href="#discouraged-items">Discouraged Items</a>
+                  <a href="#cellphones">Cellphones</a>
+                  <a href="#computers">Computers</a>
+                  <a href="#restricted-items">Restricted Items</a>
+                  <a href="#unit-regulations">Unit Regulations</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-col hidden w-full space-y-6 lg:flex ">
+              <a class="light-blue-link" href="#inpatient-care">Inpatient Care</a>
+              <a class="light-blue-link" href="#admissions-process">What is the admissions process?</a>
+              <a class="light-blue-link" href="#medication-reconciliation">Medication Reconciliation</a>
+              <a class="light-blue-link" href="#privacy-protection">Privacy Protection</a>
+              <a class="light-blue-link" href="#medications">Medications</a>
+              <a class="light-blue-link" href="#clothing">Clothing</a>
+              <a class="light-blue-link" href="#personal-care-items">Personal Care Items</a>
+              <a class="light-blue-link" href="#valuable-belongings">Valuable Belongings</a>
+              <a class="light-blue-link" href="#discouraged-items">Discouraged Items</a>
+              <a class="light-blue-link" href="#cellphones">Cellphones</a>
+              <a class="light-blue-link" href="#computers">Computers</a>
+              <a class="light-blue-link" href="#restricted-items">Restricted Items</a>
+              <a class="light-blue-link" href="#unit-regulations">Unit Regulations</a>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

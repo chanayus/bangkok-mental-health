@@ -197,6 +197,14 @@
   color: #ffa941;
 }
 
+.light-blue-link {
+  color: #4da9c2;
+  transition: color 0.1s;
+}
+.light-blue-link:hover {
+  color: #ffa941;
+}
+
 .splide__container {
   box-sizing: border-box;
   position: relative;
@@ -587,10 +595,12 @@
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 html {
   font-size: clamp(14px, 1vw, 16px);
+  scroll-padding-top: 12rem;
 }
 
 .main-container {
@@ -657,11 +667,15 @@ nav .sub-menu-wrapper {
   position: relative;
 }
 nav .sub-menu-wrapper:hover .sub-menu {
-  display: flex;
+  pointer-events: all;
+  opacity: 1;
 }
 nav .sub-menu-wrapper .sub-menu {
   background: #4da9c2;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
   flex-direction: column;
   position: absolute;
   min-width: 100%;
@@ -672,6 +686,7 @@ nav .sub-menu-wrapper .sub-menu a {
   color: #fff;
   font-size: 0.875rem;
   padding: 1rem 0.875rem;
+  transition: background-color 0.1s;
 }
 nav .sub-menu-wrapper .sub-menu a:hover, nav .sub-menu-wrapper .sub-menu a.active {
   background: #1e697d;
@@ -701,8 +716,14 @@ footer .social-link a:hover {
   text-align: left;
   justify-items: start;
 }
+.collapsible > button, .collapsible > button > i {
+  transition: color 0.25s, background-color 0.25s, transform 0.25s;
+}
 .collapsible > button:hover {
   color: #ffa941 !important;
+}
+.collapsible > button * {
+  pointer-events: none;
 }
 .collapsible .collapsible-content-wrapper {
   display: grid;
@@ -714,6 +735,10 @@ footer .social-link a:hover {
 .collapsible.active .collapsible-content-wrapper {
   grid-template-rows: 1fr;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.collapsible.active i {
+  transform: rotate(180deg);
 }
 .collapsible:not(.active) .collapsible-content-wrapper {
   grid-template-rows: 0fr;
