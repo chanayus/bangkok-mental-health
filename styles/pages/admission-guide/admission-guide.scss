@@ -66,3 +66,13 @@ aside {
     font-weight: 700;
 }
 
+.room-card {
+    img {
+        transition: 0.5s;
+    }
+    &:hover {
+        img {
+            scale: 1.1;
+        }
+    }
+}

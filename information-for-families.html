@@ -37,6 +37,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script type="module" src="./scripts/modules/main.js"></script>
+    <script type="module" src="./scripts/information-for-families.js"></script>
   </head>
   <body>
     <navbar-component></navbar-component>
@@ -76,12 +77,13 @@
           </ul>
         </article>
 
-        <figure class="pb-24"><img src="./images/pages/infomation-for-families/cover.webp" alt="" class="object-cover w-full rounded-3xl" /></figure>
+        <figure class="pb-24 overflow-hidden rounded-3xl"><img src="./images/pages/infomation-for-families/cover.webp" alt="" class="object-cover w-full" /></figure>
       </div>
-
     </main>
-    <div class="absolute w-full -bottom-[80%] bg-cream h-2/4 -z-20"></div>
-    <footer-component></footer-component>
-    
+
+    <div class="relative">
+      <div class="absolute w-full md:-top-[95%] -top-[20%] bg-cream md:h-[30rem] h-[30rem] -z-20"></div>
+      <footer-component></footer-component>
+    </div>
   </body>
 </html>

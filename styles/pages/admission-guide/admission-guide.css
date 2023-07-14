@@ -779,6 +779,10 @@ main {
   animation: fade-in 0.5s forwards;
 }
 
+.see-more-content:not(.active) {
+  display: none;
+}
+
 article .collapsible.active button {
   color: #ffa941;
   background: #fff8e7;
@@ -820,4 +824,11 @@ aside .collapsible.active .collapsible-content {
 }
 .room-category-button:is(.btn-orange):hover::before {
   opacity: 0;
+}
+
+.room-card img {
+  transition: 0.5s;
+}
+.room-card:hover img {
+  scale: 1.1;
 }/*# sourceMappingURL=admission-guide.css.map */

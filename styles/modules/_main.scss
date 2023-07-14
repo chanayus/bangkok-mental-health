@@ -231,3 +231,11 @@ footer {
 main {
     animation: fade-in 0.5s forwards;
 }
+
+// See-More
+
+.see-more-content {
+    &:not(.active) {
+        display: none;
+    }
+}

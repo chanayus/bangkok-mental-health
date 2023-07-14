@@ -779,6 +779,10 @@ main {
   animation: fade-in 0.5s forwards;
 }
 
+.see-more-content:not(.active) {
+  display: none;
+}
+
 @media (min-width: 1440px) {
   #complete-case-slide .splide__list > a:nth-of-type(3n) {
     transform: translateY(0.625rem);

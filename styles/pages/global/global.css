@@ -777,4 +777,8 @@ footer .social-link a:hover {
 
 main {
   animation: fade-in 0.5s forwards;
+}
+
+.see-more-content:not(.active) {
+  display: none;
 }/*# sourceMappingURL=global.css.map */

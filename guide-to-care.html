@@ -36,7 +36,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="./scripts/modules/main.js"></script>
+    <script type="module" src="./scripts/guide-to-care.js"></script>
   </head>
   <body>
     <navbar-component></navbar-component>
@@ -79,7 +81,7 @@
         <section class="space-y-20">
           <h2 class="text-4xl font-bold text-center text-orange">For patients</h2>
 
-          <section class="flex flex-col gap-8 lg:flex-row">
+          <section class="flex flex-col gap-8 patient-card lg:flex-row">
             <figure class="flex-1 h-[25rem] w-full">
               <img src="./images/pages/guide-to-care/1.webp" alt="" class="object-cover w-full h-full rounded-3xl" />
             </figure>
@@ -115,7 +117,7 @@
             </div>
           </section>
 
-          <section class="flex flex-col gap-8 lg:flex-row-reverse">
+          <section class="flex flex-col gap-8 patient-card lg:flex-row-reverse">
             <figure class="flex-1 h-[25rem] w-full">
               <img src="./images/pages/guide-to-care/2.webp" alt="" class="object-cover w-full h-full rounded-3xl" />
             </figure>
@@ -146,26 +148,30 @@
         </section>
       </div>
 
-      <div class="py-24 my-16 bg-cream">
+      <div id="hero-text-wrapper" class="py-24 my-16 bg-cream">
         <div class="space-y-8 text-center main-container-sm">
-          <p class="text-orange">When You Arrive</p>
-          <h2 class="lg:text-6xl text-4xl font-bold !leading-[1.35]">
-            What to expect once you arrive at <br />
-            Bangkok Mental Health Hospital?
-          </h2>
-          <p class="leading-[2]">
-            To begin a comprehensive psychiatric evaluation, our mental health specialist or MHS will speak with you to gather initial information. Our MHS will guide you through a unit orientation. A
-            nurse will then check your vital signs, evaluate and attend to your needs such as managing your medications, and clarify your medical conditions or safety concerns requiring immediate
-            attention.
-          </p>
+          <div class="overflow-hidden"><p id="hero-text-1" class="text-orange">When You Arrive</p></div>
+          <div class="overflow-hidden">
+            <h2 id="hero-text-2" class="lg:text-6xl text-4xl font-bold !leading-[1.35]">
+              What to expect once you arrive at <br />
+              Bangkok Mental Health Hospital?
+            </h2>
+          </div>
+          <div class="overflow-hidden">
+            <p id="hero-text-3" class="leading-[2]">
+              To begin a comprehensive psychiatric evaluation, our mental health specialist or MHS will speak with you to gather initial information. Our MHS will guide you through a unit orientation.
+              A nurse will then check your vital signs, evaluate and attend to your needs such as managing your medications, and clarify your medical conditions or safety concerns requiring immediate
+              attention.
+            </p>
+          </div>
         </div>
       </div>
 
-      <section class="flex flex-col gap-x-8 gap-y-16 lg:flex-row main-container-sm lg:pt-14 pb-28">
-        <figure class="relative flex-1 w-full h-fit">
+      <section class="flex flex-col family-section gap-x-8 gap-y-16 lg:flex-row main-container-sm lg:pt-7 pb-14">
+        <figure id="family-image" class="relative flex-1 w-full h-fit">
           <img src="./images/pages/guide-to-care/3.webp" alt="" class="w-[85%] max-w-[36.25rem] mx-auto object-contain h-fit rounded-3xl" />
         </figure>
-        <div class="flex-1 space-y-6">
+        <div id="family-text" class="flex-1 space-y-6">
           <h2 class="text-4xl font-bold">Are family or friends allowed to be with you during the evaluation process?</h2>
 
           <p>

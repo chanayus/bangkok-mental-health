@@ -36,7 +36,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="./scripts/modules/main.js"></script>
+    <script type="module" src="./scripts/hospital-structural-guide.js"></script>
   </head>
   <body>
     <navbar-component></navbar-component>
@@ -57,8 +59,8 @@
           <h2 class="text-4xl font-bold text-orange">Hospital structural guide</h2>
         </header>
 
-        <section class="space-y-10 pb-28">
-            <div class="rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+        <section id="card-container" class="space-y-10 pb-28">
+            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
                 <div class="flex-[1.2] w-full">
                     <img src="./images/pages/hospital-structural-guide/opd.webp" alt="">
                 </div>
@@ -68,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
                 <div class="flex-[1.2] w-full">
                     <img src="./images/pages/hospital-structural-guide/ipd.webp" alt="">
                 </div>
@@ -78,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
                 <div class="flex-[1.2] w-full">
                     <img src="./images/pages/hospital-structural-guide/therapy-zone.webp" alt="">
                 </div>
@@ -88,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
                 <div class="flex-[1.2] w-full">
                     <img src="./images/pages/hospital-structural-guide/garden.webp" alt="">
                 </div>
@@ -98,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
                 <div class="flex-[1.2] w-full">
                     <img src="./images/pages/hospital-structural-guide/parking.webp" alt="">
                 </div>

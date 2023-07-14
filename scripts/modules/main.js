@@ -79,3 +79,14 @@ if (links && main) {
     });
   });
 }
+
+// See-more
+
+const seeMoreButtons = document.querySelectorAll(".see-more-button");
+
+seeMoreButtons.forEach((button) =>
+  button.addEventListener("click", () => {
+    button.classList.add("hidden");
+    button.nextElementSibling.classList.add("active");
+  })
+);

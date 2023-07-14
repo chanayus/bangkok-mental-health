@@ -134,10 +134,10 @@ class Navbar extends HTMLElement {
                 </button>
                 <div class="collapsible-content-wrapper">
                     <div class="collapsible-content gap-y-6">
-                    <a href="">Hospital Structural Giude</a>
+                    <a href="../hospital-structural-guide.html">Hospital Structural Giude</a>
                     <a href="">Arrival Guide</a>
-                    <a href="">Admission Guide</a>
-                    <a href="">Information for Families</a>
+                    <a href="../admission-guide.html">Admission Guide</a>
+                    <a href="../information-for-families.html">Information for Families</a>
                     </div>
                 </div>
             </div>
