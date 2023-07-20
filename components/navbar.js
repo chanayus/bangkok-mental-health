@@ -29,12 +29,26 @@ class Navbar extends HTMLElement {
                         <i class="fa-brands fa-line"></i>
                     </a>
                 </div>
-                <a href="" class="px-4 font-bold orange-link border-x-1"> <i class="mr-1 fa-solid fa-phone"></i> 08-XXX-XXXX</a>
-                <a href="" class="font-medium deep-blue-link flex items-center space-x-1.5 text-sm">
-                    <img src="./icons/thai.png" alt="" />
-                    <div class="leading-3">EN</div>
-                    <i class="mb-1 fa-solid fa-chevron-down"></i>
-                </a>
+                <a href="" class="px-4 font-bold orange-link border-x-1"> <i class="mr-1 fa-solid fa-phone"></i> 08-XXX-XXXX</a>     
+                <div class="collapsible relative [&.active_.collapsible-content-wrapper]:border">
+                    <button href="" class="font-medium deep-blue-link flex items-center space-x-1.5 text-sm">
+                        <img src="./icons/thai.png" alt="" />
+                        <div class="leading-3">EN</div>
+                        <i class="mb-1 fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapsible-content-wrapper absolute rounded z-20 shadow-xl  left-0 px-1.5 top-full w-full bg-white ">
+                        <div class="collapsible-content gap-y-1 ![&>*]:px-1">
+                            <button href="" class="font-medium deep-blue-link flex items-center space-x-1.5 text-sm py-2.5">
+                                <img src="./icons/thai.png" alt="" />
+                                <div class="leading-3">TH</div>
+                            </button>
+                            <button href="" class="font-medium deep-blue-link flex items-center space-x-1.5 text-sm py-2.5">
+                                <img src="./icons/thai.png" alt="" />
+                                <div class="leading-3">EN</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Mobile -->
             <div class="flex items-center text-xl xl:hidden gap-x-4">

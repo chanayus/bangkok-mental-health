@@ -727,9 +727,9 @@ footer .social-link a:hover {
 }
 .collapsible .collapsible-content-wrapper {
   display: grid;
-  transition: grid-template-rows 0.35s, margin-top 0.35s;
+  transition: grid-template-rows 0.25s, margin-top 0.25s;
 }
-.collapsible.active button {
+.collapsible.active > button {
   color: #ffa941;
 }
 .collapsible.active .collapsible-content-wrapper {
@@ -748,7 +748,8 @@ footer .social-link a:hover {
   display: flex;
   flex-direction: column;
 }
-.collapsible .collapsible-content a {
+.collapsible .collapsible-content a,
+.collapsible .collapsible-content button {
   padding-left: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -781,4 +782,16 @@ main {
 
 .see-more-content:not(.active) {
   display: none;
+}
+
+@media (min-width: 1440px) {
+  #complete-case-slide .splide__list > a:nth-of-type(3n) {
+    transform: translateY(0.625rem);
+  }
+  #complete-case-slide .splide__list > a:nth-of-type(2n) {
+    transform: translateY(1.5rem);
+  }
+}
+.bg-radial-white {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 50%);
 }/*# sourceMappingURL=global.css.map */

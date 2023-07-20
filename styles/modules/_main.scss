@@ -172,11 +172,11 @@ footer {
     .collapsible-content-wrapper {
         display: grid;
         transition:
-            grid-template-rows 0.35s,
-            margin-top 0.35s;
+            grid-template-rows 0.25s,
+            margin-top 0.25s;
     }
     &.active {
-        button {
+        & > button {
             color: $orange;
         }
         .collapsible-content-wrapper {
@@ -197,7 +197,8 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        a {
+        a,
+        button {
             padding-left: 1.25rem;
             overflow: hidden;
             text-overflow: ellipsis;

@@ -12,7 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <script src="https://cdn.twind.style/" crossorigin></script>
+    <script src="https://cdn.twind.style//" crossorigin></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
     <link rel="stylesheet" href="./styles/pages/global/global.css" />
 
     <!-- ICONS -->
@@ -60,56 +65,74 @@
         </header>
 
         <section id="card-container" class="space-y-10 pb-28">
-            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
-                <div class="flex-[1.2] w-full">
-                    <img src="./images/pages/hospital-structural-guide/opd.webp" alt="">
-                </div>
-                <div class="flex-1 p-8">
-                    <h3 class="mb-4 text-3xl font-bold">OPD facility</h3>
-                    <p class="leading-relaxed">At Bangkok Mental Health Hospital, we provide outpatient examinations and treatment on our 1st and 2nd floors. Our facility is intentionally designed and decorated to create warmth, privacy, and meet the highest standards. Our multidisciplinary team is committed to delivering the best possible care for our patients. </p>
-                </div>
+          <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="flex-[1.2] w-full">
+              <img src="./images/pages/hospital-structural-guide/opd.webp" alt="" />
             </div>
+            <div class="flex-1 p-8">
+              <h3 class="mb-4 text-3xl font-bold">OPD facility</h3>
+              <p class="leading-relaxed">
+                At Bangkok Mental Health Hospital, we provide outpatient examinations and treatment on our 1st and 2nd floors. Our facility is intentionally designed and decorated to create warmth,
+                privacy, and meet the highest standards. Our multidisciplinary team is committed to delivering the best possible care for our patients.
+              </p>
+            </div>
+          </div>
 
-            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
-                <div class="flex-[1.2] w-full">
-                    <img src="./images/pages/hospital-structural-guide/ipd.webp" alt="">
-                </div>
-                <div class="flex-1 p-8">
-                    <h3 class="mb-4 text-3xl font-bold">Inpatient room</h3>
-                    <p class="leading-relaxed">At Bangkok Mental Health Hospital, we prioritize the quality of your stay and comfort. Our 30-bed inpatient room offers comprehensive treatment services, including psychotherapy, occupational therapy, and multidisciplinary care from our team of professionals, to ensure the best possible treatment outcomes.</p>
-                </div>
+          <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="flex-[1.2] w-full">
+              <img src="./images/pages/hospital-structural-guide/ipd.webp" alt="" />
             </div>
+            <div class="flex-1 p-8">
+              <h3 class="mb-4 text-3xl font-bold">Inpatient room</h3>
+              <p class="leading-relaxed">
+                At Bangkok Mental Health Hospital, we prioritize the quality of your stay and comfort. Our 30-bed inpatient room offers comprehensive treatment services, including psychotherapy,
+                occupational therapy, and multidisciplinary care from our team of professionals, to ensure the best possible treatment outcomes.
+              </p>
+            </div>
+          </div>
 
-            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
-                <div class="flex-[1.2] w-full">
-                    <img src="./images/pages/hospital-structural-guide/therapy-zone.webp" alt="">
-                </div>
-                <div class="flex-1 p-8">
-                    <h3 class="mb-4 text-3xl font-bold">Therapy zone</h3>
-                    <p class="leading-relaxed">Our 3rd floor is dedicated to providing a comfortable and specialized treatment experience for our patients. Here, we offer a wide range of therapeutic interventions, including group therapy, family therapy, to help our patients address their mental health concerns in a supportive and nurturing environment.</p>
-                </div>
+          <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="flex-[1.2] w-full">
+              <img src="./images/pages/hospital-structural-guide/therapy-zone.webp" alt="" />
             </div>
+            <div class="flex-1 p-8">
+              <h3 class="mb-4 text-3xl font-bold">Therapy zone</h3>
+              <p class="leading-relaxed">
+                Our 3rd floor is dedicated to providing a comfortable and specialized treatment experience for our patients. Here, we offer a wide range of therapeutic interventions, including group
+                therapy, family therapy, to help our patients address their mental health concerns in a supportive and nurturing environment.
+              </p>
+            </div>
+          </div>
 
-            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
-                <div class="flex-[1.2] w-full">
-                    <img src="./images/pages/hospital-structural-guide/garden.webp" alt="">
-                </div>
-                <div class="flex-1 p-8">
-                    <h3 class="mb-4 text-3xl font-bold">Garden</h3>
-                    <p class="leading-relaxed">On the 3rd floor, we have an outdoor garden area that is dedicated to providing a relaxing space for our patients. The garden has been carefully designed to create a pleasing and friendly atmosphere, with access control measures in place to ensure that it is secure. We prioritize the safety of our patients, and the garden's design takes this crucial factor into account.</p>
-                </div>
+          <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="flex-[1.2] w-full">
+              <img src="./images/pages/hospital-structural-guide/garden.webp" alt="" />
             </div>
+            <div class="flex-1 p-8">
+              <h3 class="mb-4 text-3xl font-bold">Garden</h3>
+              <p class="leading-relaxed">
+                On the 3rd floor, we have an outdoor garden area that is dedicated to providing a relaxing space for our patients. The garden has been carefully designed to create a pleasing and
+                friendly atmosphere, with access control measures in place to ensure that it is secure. We prioritize the safety of our patients, and the garden's design takes this crucial factor into
+                account.
+              </p>
+            </div>
+          </div>
 
-            <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
-                <div class="flex-[1.2] w-full">
-                    <img src="./images/pages/hospital-structural-guide/parking.webp" alt="">
-                </div>
-                <div class="flex-1 p-8">
-                    <h3 class="mb-4 text-3xl font-bold">Parking</h3>
-                    <p class="leading-relaxed">At our hospital, we provide convenient parking for our patients with over 50 parking spaces available. The parking area is directly connected to a passenger elevator that provides easy access to the building. In addition to our parking facilities, we also have a designated drop-off area located in front of the 1st floor entrance to further enhance the convenience of those traveling by private car.</p>
-                </div>
+          <div class="card-item rounded-[2.8125rem] flex lg:flex-row flex-col items-center shadow-[0px_4px_33px_3px_#F4F4F7] overflow-hidden">
+            <div class="flex-[1.2] w-full">
+              <img src="./images/pages/hospital-structural-guide/parking.webp" alt="" />
             </div>
+            <div class="flex-1 p-8">
+              <h3 class="mb-4 text-3xl font-bold">Parking</h3>
+              <p class="leading-relaxed">
+                At our hospital, we provide convenient parking for our patients with over 50 parking spaces available. The parking area is directly connected to a passenger elevator that provides easy
+                access to the building. In addition to our parking facilities, we also have a designated drop-off area located in front of the 1st floor entrance to further enhance the convenience of
+                those traveling by private car.
+              </p>
+            </div>
+          </div>
         </section>
+      </div>
     </main>
 
     <footer-component></footer-component>
