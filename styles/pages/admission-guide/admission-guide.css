@@ -784,6 +784,10 @@ main {
   display: none;
 }
 
+.breadcrumbs > .current-item {
+  font-weight: 700;
+}
+
 article .collapsible.active button {
   color: #ffa941;
   background: #fff8e7;

@@ -784,6 +784,10 @@ main {
   display: none;
 }
 
+.breadcrumbs > .current-item {
+  font-weight: 700;
+}
+
 @media (min-width: 1440px) {
   #complete-case-slide .splide__list > a:nth-of-type(3n) {
     transform: translateY(0.625rem);

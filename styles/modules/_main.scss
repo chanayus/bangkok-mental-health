@@ -240,3 +240,9 @@ main {
         display: none;
     }
 }
+
+// Breadcrumb
+
+.breadcrumbs > .current-item {
+    font-weight: 700;
+}
