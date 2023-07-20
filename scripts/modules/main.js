@@ -1,3 +1,5 @@
+import { twind } from "../../styles/modules/twind.js";
+
 let prevScrollY = window.scrollY;
 const topNav = document.querySelector("#top-nav");
 
@@ -90,3 +92,7 @@ seeMoreButtons.forEach((button) =>
     button.nextElementSibling.classList.add("active");
   })
 );
+
+// Init Twind CSS
+
+twind.install({ hash: false });
