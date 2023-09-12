@@ -661,9 +661,14 @@ html {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-@media (max-width: 1480px) {
+@media (max-width: 1640px) {
   .main-container {
-    max-width: 1220px;
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1366px) {
+  .main-container {
+    max-width: 1136px;
   }
 }
 
@@ -674,9 +679,14 @@ html {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-@media (max-width: 1480px) {
+@media (max-width: 1640px) {
   .main-container-sm {
     max-width: 1024px;
+  }
+}
+@media (max-width: 1366px) {
+  .main-container-sm {
+    max-width: 960px;
   }
 }
 
