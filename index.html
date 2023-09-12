@@ -50,36 +50,113 @@
     <navbar-component></navbar-component>
 
     <main>
-      <header class="w-full min-h-screen flex-col bg-[linear-gradient(133deg,_#7FEFF6_0%,_#D4DDD2_100%)] flex lg:pt-[10rem] pt-[7.5rem]">
-        <div class="flex flex-col flex-1 h-full mx-auto main-container gap-x-8 gap-y-4 lg:flex-row">
-          <div class="flex flex-col self-center justify-center flex-1 space-y-6 text-center text-deep-blue lg:mb-28 lg:text-left">
-            <h1 class="hero-text opacity-0 text-[clamp(3.75rem,5.25vw,6.25rem)] leading-[1] font-bold">We are here to support you.</h1>
-            <p class="hero-text opacity-0 xl:text-2xl text-xl !leading-[1.75]">
-              Discover hope and healing at Bangkok Mental Health Hospital. Our caring professionals and advanced treatments provide a safe and supportive space for your journey to mental wellness.
-              Join us today and take the first step towards a brighter future.
-            </p>
-            <a href="" class="block mx-auto opacity-0 hero-text btn-orange w-fit lg:mx-0">Make an Appointment</a>
+      <header id="hero-banner" class="relative min-h-[75vh] w-full flex-col bg-[linear-gradient(106deg,#BFE3F5_7.37%,#DDEDF0_42.33%,#FDF7EC_99.31%)] lg:pt-[10vmax] pt-[15vh] flex">
+        <button id="hero-banner-prev" class="absolute z-10 items-center justify-center hidden p-3 -translate-y-1/2 bg-white rounded-full xl:flex w-14 h-14 left-8 top-1/2">
+          <img src="./icons/arrow-right.svg" alt="" class="w-full h-full rotate-180" />
+        </button>
+        <button id="hero-banner-next" class="absolute z-10 items-center justify-center hidden p-3 -translate-y-1/2 bg-white rounded-full xl:flex w-14 h-14 right-8 top-1/2">
+          <img src="./icons/arrow-right.svg" alt="" class="w-full h-full" />
+        </button>
+
+        <!-- Pagination -->
+        <section id="hero-banner-pagination" class="absolute z-10 justify-center hidden w-full xl:flex bottom-14 gap-x-2"></section>
+
+        <!-- Banner Content -->
+        <section class="w-full flex-[1_1_0] main-container">
+          <!-- Banner Item -->
+          <div class="w-full hero-banner-content flex flex-col items-center h-full mx-auto gap-x-6 gap-y-4 min-[1025px]:flex-row">
+            <section class="flex flex-col justify-center flex-1 gap-y-6 text-center text-deep-blue min-[1025px]:mb-12 min-[1025px]:text-left">
+              <h1 class="hero-text opacity-0 text-[clamp(3rem,5.75vw,5.25rem)] leading-[1] font-bold">We are here to <span class="text-orange">support</span> you.</h1>
+              <p class="hero-text opacity-0 text-xl !leading-[1.6] line-clamp-7">
+                Discover hope and healing at Bangkok Mental Health Hospital. Our caring professionals and advanced treatments provide a safe and supportive space for your journey to mental wellness.
+                Join us today and take the first step towards a brighter future.
+              </p>
+            </section>
+
+            <section class="self-end relative flex-1 w-full max-w-[45rem] h-[55vmin] mx-auto">
+              <img id="human" src="./images/pages/index/hero.png" class="object-contain object-bottom w-full h-full xl:absolute" />
+            </section>
+          </div>
+          <!-- Banner Item -->
+          <div class="w-full hero-banner-content flex flex-col items-center h-full mx-auto gap-x-6 gap-y-4 min-[1025px]:flex-row">
+            <section class="flex flex-col justify-center flex-1 gap-y-6 text-center text-deep-blue min-[1025px]:mb-12 min-[1025px]:text-left">
+              <h1 class="hero-text opacity-0 text-[clamp(3rem,5.75vw,5.25rem)] leading-[1] font-bold">Martin <span class="text-orange">Ødegaard</span></h1>
+              <p class="hero-text opacity-0 text-xl !leading-[1.6] line-clamp-7">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit veniam dolor culpa exercitationem doloribus fugit perspiciatis enim deserunt earum quaerat sequi delectus vero,
+                facilis ad eaque provident debitis quisquam.
+              </p>
+            </section>
+
+            <section class="self-end relative flex-1 w-full max-w-[45rem] h-[55vmin] mx-auto">
+              <img id="human" src="https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png" alt="" class="object-contain object-bottom w-full h-full xl:absolute" />
+            </section>
           </div>
 
-          <div class="flex-[1.25] min-h-[40vh] overflow-hidden h-[calc(100vh-11rem)] shrink-0 flex w-full self-end relative [&_img]:absolute [&_img]:opacity-0 [&_img]:bottom-0">
-            <img id="bg-hero" src="./images/pages/index/bg-hero.svg" alt="" class="object-contain object-bottom w-full h-full" />
+          <!-- Banner Item -->
+          <div class="w-full hero-banner-content flex flex-col items-center h-full mx-auto gap-x-6 gap-y-4 min-[1025px]:flex-row">
+            <section class="flex flex-col justify-center flex-1 gap-y-6 text-center text-deep-blue min-[1025px]:mb-12 min-[1025px]:text-left">
+              <h1 class="hero-text opacity-0 text-[clamp(3rem,5.75vw,5.25rem)] leading-[1] font-bold">Enzo <span class="text-orange">Fernández</span></h1>
+              <p class="hero-text opacity-0 text-xl !leading-[1.6] line-clamp-7">
+                พบกับความหวังและการดูแลที่พิเศษกว่า ที่โรงพยาบาลแบงค็อก เมนทัล เฮลท์ ซึ่งมีแพทย์และเจ้าหน้าที่ผู้เชี่ยวชาญด้านการดูแลรักษาจิตใจ โรงพยาบาลของเรามีความปลอดภัย สบาย และอบอุ่น
+                ส่งเสริมสมดุลของสุขภาพจิต พบกับพวกเราในวันนี้เพื่อก้าวสู่อนาคตที่สดใส
+              </p>
+            </section>
 
-            <img id="human" src="./images/pages/index/human.webp" alt="" class="object-contain object-bottom w-full h-full" />
-
-            <img src="./images/pages/index/brain.webp" alt="" class="object-contain object-bottom w-full h-full hero-icon" />
-            <img src="./images/pages/index/cloud.webp" alt="" class="object-contain object-bottom w-full h-full hero-icon" />
-            <img src="./images/pages/index/heart.webp" alt="" class="object-contain object-bottom w-full h-full hero-icon" />
+            <section class="self-end relative flex-1 w-full max-w-[45rem] h-[55vmin] mx-auto">
+              <img id="human" src="https://resources.premierleague.com/premierleague/photos/players/250x250/p448047.png" alt="" class="object-contain object-bottom w-full h-full xl:absolute" />
+            </section>
           </div>
-        </div>
+
+          <!-- Banner Item -->
+          <div class="w-full hero-banner-content flex flex-col items-center h-full mx-auto gap-x-6 gap-y-4 min-[1025px]:flex-row">
+            <section class="flex flex-col justify-center flex-1 gap-y-6 text-center text-deep-blue min-[1025px]:mb-12 min-[1025px]:text-left">
+              <h1 class="hero-text opacity-0 text-[clamp(3rem,5.75vw,5.25rem)] leading-[1] font-bold">Doctor <span class="text-orange">Fernández</span></h1>
+              <p class="hero-text opacity-0 text-xl !leading-[1.6] line-clamp-7">
+                พบกับความหวังและการดูแลที่พิเศษกว่า ที่โรงพยาบาลแบงค็อก เมนทัล เฮลท์ ซึ่งมีแพทย์และเจ้าหน้าที่ผู้เชี่ยวชาญด้านการดูแลรักษาจิตใจ โรงพยาบาลของเรามีความปลอดภัย สบาย และอบอุ่น
+                ส่งเสริมสมดุลของสุขภาพจิต พบกับพวกเราในวันนี้เพื่อก้าวสู่อนาคตที่สดใส
+              </p>
+            </section>
+
+            <section class="self-end relative flex-1 w-full max-w-[45rem] h-[55vmin] mx-auto">
+              <img
+                id="human"
+                src="https://www.freepnglogos.com/uploads/doctor-png/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3.png"
+                alt=""
+                class="object-contain object-bottom w-full h-full xl:absolute"
+              />
+            </section>
+          </div>
+
+          <!-- Banner Item -->
+          <div class="w-full hero-banner-content flex flex-col items-center h-full mx-auto gap-x-6 gap-y-4 min-[1025px]:flex-row">
+            <section class="flex flex-col justify-center flex-1 gap-y-6 text-center text-deep-blue min-[1025px]:mb-12 min-[1025px]:text-left">
+              <h1 class="hero-text opacity-0 text-[clamp(3rem,5.75vw,5.25rem)] leading-[1] font-bold">Doctors</h1>
+              <p class="hero-text opacity-0 text-xl !leading-[1.6] line-clamp-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati est consequuntur vel inventore amet velit dicta ab officia veritatis porro maxime corporis atque quis et adipisci error, expedita consequatur aspernatur!
+              Vel quos quam modi deleniti delectus praesentium sapiente mollitia dolore nostrum eveniet, cum laborum minus at earum saepe, voluptatem sit et maiores assumenda excepturi natus labore in? Quae, nisi beatae.
+              Quisquam ex, tempore error nihil molestias aperiam soluta earum iure voluptatem, nam pariatur dignissimos, voluptates temporibus culpa porro doloremque ratione placeat nobis in architecto. Laboriosam dolores esse ullam unde est.
+              Officiis dolore numquam quia eligendi delectus suscipit debitis neque, corporis quibusdam consectetur, similique sequi ad quos est. Assumenda voluptatibus soluta quibusdam adipisci est, ducimus blanditiis quod odit minima corporis? Excepturi.
+              Perferendis, temporibus? Nobis, ad, reprehenderit sequi tenetur eligendi nemo ratione odio vero, assumenda cumque libero? Quasi nostrum nihil veniam vel commodi quod aspernatur, iste dolore maxime inventore eius cumque ad.
+              Alias laboriosam voluptates veritatis vitae necessitatibus dolore suscipit placeat consequuntur. Ipsam nobis aliquid nam. Maxime corporis quod iure odit suscipit eaque optio rerum, quo, praesentium doloribus sit, rem repudiandae harum.
+              Molestias soluta commodi sint rem doloribus earum nihil? Ex dicta incidunt exercitationem odit vitae a ad, temporibus, quo accusantium quod doloremque facere inventore aliquid deleniti iste voluptas laboriosam consectetur eaque?
+              Asperiores maxime nulla corrupti eveniet veritatis, quidem accusantium sunt libero a id sequi omnis esse aspernatur animi corporis molestias. Sed autem debitis dolores repellendus non nihil, similique delectus cupiditate itaque.
+              Odit, nisi repellat, consectetur et nesciunt minima earum repudiandae itaque quae aperiam culpa incidunt explicabo eveniet quam hic. Soluta repellendus autem odit quisquam eum, corrupti voluptatibus deleniti rerum consequuntur omnis?
+              Repudiandae modi sint est consequatur earum ut natus quos vel dolorum unde ad, eius, quas ipsam totam culpa! Mollitia vero pariatur iste repudiandae quo deleniti rerum saepe sint ipsum nulla.</p>
+            </section>
+
+            <section class="self-end relative flex-1 w-full max-w-[45rem] h-[55vh] mx-auto">
+              <img id="human" src="https://www.ziffytech.com/assets/img/home-icon/bannernew.png" alt="" class="object-contain object-bottom w-full h-full xl:absolute" />
+            </section>
+          </div>
+        </section>
       </header>
 
       <!-- Treatment Programs Section -->
       <section class="main-container">
         <div class="relative -top-10 z-10 bg-white rounded-3xl text-center shadow-[rgba(0,0,0,0.1)] shadow-2xl p-10">
-          <p class="text-deep-blue">Personalized care that's unique to your situation.</p>
+          <p class="mb-2 text-deep-blue">Personalized care that's unique to your situation.</p>
           <h3 class="text-3xl font-bold text-orange">Treatment Programs</h3>
           <div
-            class="text-light-blue md:px-[4vw] [&_a:hover>img]:scale-75 [&_a>img]:transition-transform whitespace-nowrap grid items-start grid-cols-[repeat(auto-fit,minmax(80px,1fr))] gap-8 leading-[1.25] justify-center mt-8 [&_img]:w-12 [&_img]:h-12 [&_img]:object-contain"
+            class="text-deep-blue md:px-[4vw] [&_a:hover>img]:scale-[0.8] [&_a>img]:transition-transform [&_a>img]:duration-200 whitespace-nowrap grid items-start grid-cols-[repeat(auto-fit,minmax(80px,1fr))] gap-8 leading-[1.25] justify-center mt-8 [&_img]:w-12 [&_img]:h-12 [&_img]:object-contain"
           >
             <a href="./depression.html" class="flex flex-col items-center justify-center space-y-4">
               <img src="./icons/diseases/depression.png" alt="" width="65" height="65" />
@@ -161,194 +238,111 @@
         <div class="absolute bottom-0 w-full h-1/2 bg-light-gray"></div>
       </section>
 
-      <!-- Complete Case Section -->
-      <section id="complete-case-section" class="py-28">
-        <div class="flex items-center justify-between space-x-4 main-container-sm">
-          <h2 class="font-bold text-[clamp(2.5rem,6vw,7.25rem)] text-[#EDEFF1]">Completed Cases</h2>
-          <a href="" class="flex space-x-3 text-lg font-medium text-light-blue shrink-0">
-            <div>See All</div>
-            <img src="./icons/see-all.svg" alt="" />
-          </a>
+      <!-- Contact Section -->
+      <section class="flex flex-col items-center justify-between gap-16 lg:flex-row py-44 main-container-sm">
+        <div class="flex-1 space-y-10 text-center md:text-left">
+          <h3 class="text-5xl font-bold text-orange">Contact us</h3>
+
+          <div class="flex flex-col items-center gap-x-8 gap-y-4 md:flex-row">
+            <figure class="flex items-center justify-center w-20 p-4 border-2 rounded-full sm:w-22 aspect-square shrink-0 border-deep-blue">
+              <img src="./icons/location-blue.svg" alt="" />
+            </figure>
+            <p class="text-xl font-bold sm:text-2xl text-deep-blue max-w-[40ch]">139 Tiwanon - Pathum Thani road, Tha Sai, Mueang Nonthaburi Nonthaburi 11000</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-x-8 gap-y-4 md:flex-row">
+            <figure class="flex items-center justify-center w-20 p-4 border-2 rounded-full sm:w-22 aspect-square shrink-0 border-deep-blue">
+              <img src="./icons/mail-blue.svg" alt="" />
+            </figure>
+            <p class="text-xl font-bold sm:text-2xl text-deep-blue">bangkokmentalhealth@gmail.com</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-x-8 gap-y-4 md:flex-row">
+            <figure class="flex items-center justify-center w-20 p-4 border-2 rounded-full sm:w-22 aspect-square shrink-0 border-deep-blue">
+              <img src="./icons/phone-blue.svg" alt="" />
+            </figure>
+            <p class="text-xl font-bold sm:text-2xl text-deep-blue">08 6997 2967</p>
+          </div>
         </div>
-        <section id="complete-case-slide" class="splide">
-          <div class="splide__track">
-            <ul class="splide__list py-8 sm:[&>div]:px-0 [&>div]:px-5">
+        <!-- GPS -->
+        <figure class="flex-1 w-full overflow-hidden md:rounded-3xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.2722065469284!2d100.50891637596914!3d13.882665294248463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e284b75057a34b%3A0x66799e18986b4aa8!2z4LmC4Lij4LiH4Lie4Lii4Liy4Lia4Liy4Lil4LmB4Lia4LiH4LiE4LmH4Lit4LiBIOC5gOC4oeC4meC4l-C4seC4pSDguYDguK7guKXguJfguYw!5e0!3m2!1sth!2sth!4v1694513575250!5m2!1sth!2sth"
+            width="100%"
+            height="480"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="max-h-[50vh]"
+          ></iframe>
+        </figure>
+      </section>
+
+      <!-- Hiring Section -->
+      <section id="hiring-section" class="space-y-8 py-28 bg-light-cream top-16">
+        <div class="space-y-4 text-center main-container-sm">
+          <p class="text-lg text-orange">We 're hiring</p>
+          <h3 class="text-4xl font-bold text-deep-blue">Join us</h3>
+          <p class="text-lg text-deep-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        </div>
+        <section id="hiring-slide" class="relative splide">
+          <div class="hidden splide__arrows lg:block">
+            <button class="splide__arrow splide__arrow--prev !left-10">
+              <img src="./icons/arrow-left.svg" alt="" />
+            </button>
+            <button class="splide__arrow splide__arrow--next !right-10">
+              <img src="./icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="hidden splide__track lg:block">
+            <ul class="splide__list">
               <!-- Slide Item -->
-              <a href="" class="splide__slide overflow-hidden rounded-3xl w-[27rem] h-[36.875rem] relative text-white [&:hover>.overlay]:opacity-100 [&:hover_img]:scale-110">
-                <div class="overlay transition-opacity opacity-0 absolute bottom-0 w-full rounded-b-3xl h-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.00)_0%,rgba(246,168,71,0.59)_100%)]"></div>
-                <div class="absolute flex flex-col justify-between w-full h-full p-8">
-                  <div class="px-4 py-1 font-medium rounded-full bg-orange-gradient w-fit">Case Study</div>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet,</p>
-                    <h4 class="text-2xl font-semibold line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                  </div>
+              <a href="" class="space-y-4 splide__slide">
+                <img src="./images/pages/index/job1.jpg" alt="" class="relative object-cover w-full duration-500 rounded-3xl aspect-square" />
+                <div class="space-y-1">
+                  <h4 class="text-2xl font-bold text-deep-blue">We 're hiring People Management Office</h4>
+                  <p class="text-lg text-deep-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
-                <img src="./images/pages/index/case1.webp" alt="" class="relative object-cover w-full h-full duration-500 -z-10" />
               </a>
               <!-- Slide Item -->
-              <a href="" class="splide__slide overflow-hidden rounded-3xl w-[27rem] h-[36.875rem] relative text-white [&:hover>.overlay]:opacity-100 [&:hover_img]:scale-110">
-                <div class="overlay transition-opacity opacity-0 absolute bottom-0 w-full rounded-b-3xl h-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.00)_0%,rgba(246,168,71,0.59)_100%)]"></div>
-                <div class="absolute flex flex-col justify-between w-full h-full p-8">
-                  <div class="px-4 py-1 font-medium rounded-full bg-orange-gradient w-fit">Case Study</div>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet,</p>
-                    <h4 class="text-2xl font-semibold line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                  </div>
+              <a href="" class="space-y-4 splide__slide">
+                <img src="./images/pages/index/job2.jpg" alt="" class="relative object-cover w-full duration-500 rounded-3xl aspect-square" />
+                <div class="space-y-1">
+                  <h4 class="text-2xl font-bold text-deep-blue">We 're hiring Psychiatric Nurse</h4>
+                  <p class="text-lg text-deep-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
-                <img src="./images/pages/index/case2.webp" alt="" class="relative object-cover w-full h-full duration-500 -z-10" />
               </a>
               <!-- Slide Item -->
-              <a href="" class="splide__slide overflow-hidden rounded-3xl w-[27rem] h-[36.875rem] relative text-white [&:hover>.overlay]:opacity-100 [&:hover_img]:scale-110">
-                <div class="overlay transition-opacity opacity-0 absolute bottom-0 w-full rounded-b-3xl h-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.00)_0%,rgba(246,168,71,0.59)_100%)]"></div>
-                <div class="absolute flex flex-col justify-between w-full h-full p-8">
-                  <div class="px-4 py-1 font-medium rounded-full bg-orange-gradient w-fit">Case Study</div>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet,</p>
-                    <h4 class="text-2xl font-semibold line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                  </div>
+              <a href="" class="space-y-4 splide__slide">
+                <img src="./images/pages/index/job3.jpg" alt="" class="relative object-cover w-full duration-500 rounded-3xl aspect-square" />
+                <div class="space-y-1">
+                  <h4 class="text-2xl font-bold text-deep-blue">We 're hiring Secretary</h4>
+                  <p class="text-lg text-deep-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
-                <img src="./images/pages/index/case3.webp" alt="" class="relative object-cover w-full h-full duration-500 -z-10" />
               </a>
               <!-- Slide Item -->
-              <a href="" class="splide__slide overflow-hidden rounded-3xl w-[27rem] h-[36.875rem] relative text-white [&:hover>.overlay]:opacity-100 [&:hover_img]:scale-110">
-                <div class="overlay transition-opacity opacity-0 absolute bottom-0 w-full rounded-b-3xl h-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.00)_0%,rgba(246,168,71,0.59)_100%)]"></div>
-                <div class="absolute flex flex-col justify-between w-full h-full p-8">
-                  <div class="px-4 py-1 font-medium rounded-full bg-orange-gradient w-fit">Case Study</div>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet,</p>
-                    <h4 class="text-2xl font-semibold line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                  </div>
+              <a href="" class="space-y-4 splide__slide">
+                <img src="./images/pages/index/job4.jpg" alt="" class="relative object-cover w-full duration-500 rounded-3xl aspect-square" />
+                <div class="space-y-1">
+                  <h4 class="text-2xl font-bold text-deep-blue">We 're hiring People Management Office</h4>
+                  <p class="text-lg text-deep-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
-                <img src="./images/pages/index/case2.webp" alt="" class="relative object-cover w-full h-full duration-500 -z-10" />
               </a>
               <!-- Slide Item -->
-              <a href="" class="splide__slide overflow-hidden rounded-3xl w-[27rem] h-[36.875rem] relative text-white [&:hover>.overlay]:opacity-100 [&:hover_img]:scale-110">
-                <div class="overlay transition-opacity opacity-0 absolute bottom-0 w-full rounded-b-3xl h-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.00)_0%,rgba(246,168,71,0.59)_100%)]"></div>
-                <div class="absolute flex flex-col justify-between w-full h-full p-8">
-                  <div class="px-4 py-1 font-medium rounded-full bg-orange-gradient w-fit">Case Study</div>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet,</p>
-                    <h4 class="text-2xl font-semibold line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                  </div>
+              <a href="" class="space-y-4 splide__slide">
+                <img src="./images/pages/index/job1.jpg" alt="" class="relative object-cover w-full duration-500 rounded-3xl aspect-square" />
+                <div class="space-y-1">
+                  <h4 class="text-2xl font-bold text-deep-blue">We 're hiring People Management Office</h4>
+                  <p class="text-lg text-deep-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
-                <img src="./images/pages/index/case1.webp" alt="" class="relative object-cover w-full h-full duration-500 -z-10" />
               </a>
             </ul>
           </div>
         </section>
-      </section>
-
-      <!-- Video Section -->
-      <section>
-        <h2 class="text-[3rem] font-bold md:leading-[2] text-center text-light-blue py-14">
-          We Provide Essential Services <br />
-          For Your Mental Health
-        </h2>
-        <div class="relative">
-          <div class="absolute flex items-center justify-center w-full h-full">
-            <button class="flex items-center justify-center w-16 h-16 text-3xl text-white rounded-full bg-orange-gradient">
-              <i class="fa-solid fa-play"></i>
-            </button>
-          </div>
-          <img src="./images/pages/index/video.webp" alt="" class="object-cover w-full h-full" />
-        </div>
-        <div class="py-8 bg-cream">
-          <div class="flex justify-center text-xl font-medium main-container-sm text-light-blue">
-            <div class="flex flex-col mx-auto md:flex-row md:w-full space gap-y-10 justify-evenly">
-              <div class="flex items-center w-fit"><img src="./icons/verify-orange.svg" width="24" height="24" alt="" class="mb-1 mr-2" /> 30+ years of experience</div>
-              <div class="flex items-center w-fit"><img src="./icons/verify-orange.svg" width="24" height="24" alt="" class="mb-1 mr-2" /> Urgent 24-hour service</div>
-              <div class="flex items-center w-fit"><img src="./icons/verify-orange.svg" width="24" height="24" alt="" class="mb-1 mr-2" /> High quality care</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Article Section -->
-      <section class="py-28 main-container-sm">
-        <div class="flex items-center justify-between space-x-4">
-          <h2 class="font-bold text-[clamp(2.5rem,6vw,7.5rem)] text-[#EDEFF1]">Our articles</h2>
-          <a href="" class="flex space-x-3 text-lg font-medium text-light-blue shrink-0">
-            <div>See All</div>
-            <img src="./icons/see-all.svg" alt="" />
-          </a>
-        </div>
-        <!-- Article Desktop  -->
-        <div class="hidden gap-6 md:flex [&_img]:duration-500 [& _a:hover_img]:scale-110">
-          <a href="" class="flex-1">
-            <div class="overflow-hidden rounded-3xl">
-              <img src="./images/pages/index/article1.webp" alt="" class="" />
-            </div>
-            <div class="py-8">
-              <div class="text-orange">Blog</div>
-              <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-            </div>
-          </a>
-          <div class="flex flex-col flex-1 gap-y-6">
-            <a href="" class="flex items-center gap-x-6">
-              <div class="flex-1 overflow-hidden rounded-3xl">
-                <img src="./images/pages/index/article2.webp" alt="" class="w-full h-full" />
-              </div>
-              <div class="flex-1">
-                <div class="text-orange">Blog</div>
-                <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-              </div>
-            </a>
-            <a href="" class="flex items-center gap-x-6">
-              <div class="flex-1 overflow-hidden rounded-3xl">
-                <img src="./images/pages/index/article3.webp" alt="" class="w-full h-full" />
-              </div>
-              <div class="flex-1">
-                <div class="text-orange">Blog</div>
-                <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-              </div>
-            </a>
-            <a href="" class="flex items-center gap-x-6">
-              <div class="flex-1 overflow-hidden rounded-3xl">
-                <img src="./images/pages/index/article4.webp" alt="" class="w-full h-full" />
-              </div>
-              <div class="flex-1">
-                <div class="text-orange">Blog</div>
-                <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- Article Mobile -->
-        <div id="article-mobile-slide" class="my-8 splide md:hidden">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <a href="" class="flex flex-col splide__slide">
-                <div><img src="./images/pages/index/article1.webp" alt="" class="object-cover w-full h-full rounded-3xl" /></div>
-                <div class="py-8">
-                  <div class="text-orange">Blog</div>
-                  <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                </div>
-              </a>
-              <a href="" class="flex flex-col splide__slide">
-                <div class="flex-1"><img src="./images/pages/index/article2.webp" alt="" class="object-cover w-full h-full rounded-3xl" /></div>
-                <div class="py-8">
-                  <div class="text-orange">Blog</div>
-                  <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                </div>
-              </a>
-              <a href="" class="flex flex-col splide__slide">
-                <div class="flex-1"><img src="./images/pages/index/article3.webp" alt="" class="object-cover w-full h-full rounded-3xl" /></div>
-                <div class="py-8">
-                  <div class="text-orange">Blog</div>
-                  <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                </div>
-              </a>
-              <a href="" class="flex flex-col splide__slide">
-                <div class="flex-1"><img src="./images/pages/index/article4.webp" alt="" class="object-cover w-full h-full rounded-3xl" /></div>
-                <div class="py-8">
-                  <div class="text-orange">Blog</div>
-                  <h4 class="text-xl font-bold text-light-blue line-clamp-3">The Most Fasicnating Exeperince To Overcome Sadness</h4>
-                </div>
-              </a>
-            </ul>
-            <div class="mt-8"><div className=" splide__pagination"></div></div>
-          </div>
-        </div>
+        <!-- hiring Section (Content added by index.js) -->
+        <div id="hiring-mobile-content" class="grid px-5 py-8 lg:hidden gap-x-8 gap-y-10 sm:grid-cols-2"></div>
       </section>
     </main>
 

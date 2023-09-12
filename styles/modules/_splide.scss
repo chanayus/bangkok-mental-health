@@ -128,22 +128,22 @@
 .splide__arrow {
     -ms-flex-align: center;
     align-items: center;
-    background: #ccc;
+    background: #FFF;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
     display: -ms-flexbox;
     display: flex;
-    height: 2em;
+    height: 4rem;
     -ms-flex-pack: center;
     justify-content: center;
-    opacity: 0.7;
     padding: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 2em;
+    width: 4rem;
     z-index: 1;
+    transition: opacity 0.25s;
 }
 .splide__arrow svg {
     fill: #000;
@@ -154,20 +154,20 @@
     opacity: 0.9;
 }
 .splide__arrow:disabled {
-    opacity: 0.3;
+    opacity: 0;
 }
 .splide__arrow:focus-visible {
     outline: 3px solid #0bf;
     outline-offset: 3px;
 }
 .splide__arrow--prev {
-    left: 1em;
+    left: 1.5rem;
 }
 .splide__arrow--prev svg {
     transform: scaleX(-1);
 }
 .splide__arrow--next {
-    right: 1em;
+    right:  1.5rem;
 }
 .splide.is-focus-in .splide__arrow:focus {
     outline: 3px solid #0bf;

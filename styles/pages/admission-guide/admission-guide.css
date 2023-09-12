@@ -1,17 +1,17 @@
 .text-deep-blue {
-  color: #1e697d;
+  color: #2b5693;
 }
 
 .bg-deep-blue {
-  background: #1e697d;
+  background: #2b5693;
 }
 
 .accent-deep-blue {
-  accent-color: #1e697d;
+  accent-color: #2b5693;
 }
 
 .border-deep-blue {
-  border-color: #1e697d;
+  border-color: #2b5693;
 }
 
 .text-light-blue {
@@ -47,19 +47,19 @@
 }
 
 .text-orange {
-  color: #ffa941;
+  color: #ff773b;
 }
 
 .bg-orange {
-  background: #ffa941;
+  background: #ff773b;
 }
 
 .accent-orange {
-  accent-color: #ffa941;
+  accent-color: #ff773b;
 }
 
 .border-orange {
-  border-color: #ffa941;
+  border-color: #ff773b;
 }
 
 .text-cream {
@@ -78,20 +78,36 @@
   border-color: #fff8e7;
 }
 
+.text-light-cream {
+  color: #fffcf4;
+}
+
+.bg-light-cream {
+  background: #fffcf4;
+}
+
+.accent-light-cream {
+  accent-color: #fffcf4;
+}
+
+.border-light-cream {
+  border-color: #fffcf4;
+}
+
 .text-orange-gradient {
-  color: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+  color: linear-gradient(314deg, #ffbc6b 0%, #ff773b 100%);
 }
 
 .bg-orange-gradient {
-  background: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+  background: linear-gradient(314deg, #ffbc6b 0%, #ff773b 100%);
 }
 
 .accent-orange-gradient {
-  accent-color: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+  accent-color: linear-gradient(314deg, #ffbc6b 0%, #ff773b 100%);
 }
 
 .border-orange-gradient {
-  border-color: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+  border-color: linear-gradient(314deg, #ffbc6b 0%, #ff773b 100%);
 }
 
 .text-orange-radial-gradient {
@@ -112,7 +128,7 @@
 
 .btn-orange {
   position: relative;
-  background: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+  background: #ff773b;
   padding: 0.6875rem 2rem;
   border-radius: 9999px;
   color: #fff;
@@ -130,7 +146,7 @@
   opacity: 0;
   width: 100%;
   height: 100%;
-  background-color: #1e697d;
+  background-color: #2b5693;
   border-radius: 9999px;
   left: 0;
   top: 0;
@@ -140,10 +156,10 @@
 .btn-orange-border {
   position: relative;
   background: transparent;
-  border: 1px solid #ffa941;
+  border: 1px solid #ff773b;
   padding: 0.6875rem 2rem;
   border-radius: 9999px;
-  color: #ffa941;
+  color: #ff773b;
   transition: background-color 0.15s;
   z-index: 1;
   overflow: hidden;
@@ -161,7 +177,7 @@
   opacity: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffa941;
+  background-color: #ff773b;
   border-radius: 9999px;
   left: 0;
   top: 0;
@@ -172,29 +188,29 @@
   background: transparent;
   padding: 0.6875rem 2rem;
   border-radius: 9999px;
-  color: #ffa941;
+  color: #ff773b;
   border: 1px solid #f6f6f6;
   transition: background-color 0.15s;
 }
 .btn-transparent:hover {
-  background: #1e697d;
+  background: #2b5693;
   color: #fff;
 }
 
 .orange-link {
-  color: #ffa941;
+  color: #ff773b;
   transition: color 0.1s;
 }
 .orange-link:hover {
-  color: #1e697d;
+  color: #2b5693;
 }
 
 .deep-blue-link {
-  color: #1e697d;
+  color: #2b5693;
   transition: color 0.1s;
 }
 .deep-blue-link:hover {
-  color: #ffa941;
+  color: #ff773b;
 }
 
 .light-blue-link {
@@ -202,7 +218,7 @@
   transition: color 0.1s;
 }
 .light-blue-link:hover {
-  color: #ffa941;
+  color: #ff773b;
 }
 
 .splide__container {
@@ -347,20 +363,20 @@
 
 .splide__arrow {
   align-items: center;
-  background: #ccc;
+  background: #FFF;
   border: 0;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
-  height: 2em;
+  height: 4rem;
   justify-content: center;
-  opacity: 0.7;
   padding: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 2em;
+  width: 4rem;
   z-index: 1;
+  transition: opacity 0.25s;
 }
 
 .splide__arrow svg {
@@ -374,7 +390,7 @@
 }
 
 .splide__arrow:disabled {
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .splide__arrow:focus-visible {
@@ -383,7 +399,7 @@
 }
 
 .splide__arrow--prev {
-  left: 1em;
+  left: 1.5rem;
 }
 
 .splide__arrow--prev svg {
@@ -391,7 +407,7 @@
 }
 
 .splide__arrow--next {
-  right: 1em;
+  right: 1.5rem;
 }
 
 .splide.is-focus-in .splide__arrow:focus {
@@ -423,7 +439,7 @@
 }
 
 .splide__pagination__page.is-active {
-  background: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+  background: linear-gradient(314deg, #ffbc6b 0%, #ff773b 100%);
   transform: scale(1.4);
   z-index: 1;
 }
@@ -589,6 +605,41 @@
   overflow: hidden;
 }
 
+.line-clamp-6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-8 {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-9 {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-10 {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 * {
   touch-action: manipulation;
   font-family: "IBM Plex Sans Thai", sans-serif;
@@ -604,19 +655,29 @@ html {
 }
 
 .main-container {
-  max-width: 1680px;
+  max-width: 1480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+@media (max-width: 1480px) {
+  .main-container {
+    max-width: 1220px;
+  }
+}
 
 .main-container-sm {
-  max-width: 1440px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+@media (max-width: 1480px) {
+  .main-container-sm {
+    max-width: 1024px;
+  }
 }
 
 button:disabled {
@@ -651,8 +712,8 @@ nav .social-link a {
   transition: background-color 0.1s;
 }
 nav .social-link a:hover {
-  border: 1px solid #ffa941;
-  color: #ffa941;
+  border: 1px solid #ff773b;
+  color: #ff773b;
 }
 nav .page-nav-menu > a, nav .page-nav-menu > div {
   transition: 0.1s;
@@ -660,8 +721,8 @@ nav .page-nav-menu > a, nav .page-nav-menu > div {
   border-bottom: 3px solid transparent;
 }
 nav .page-nav-menu > a:hover, nav .page-nav-menu > a.active, nav .page-nav-menu > div:hover, nav .page-nav-menu > div.active {
-  color: #ffa941;
-  border-color: #ffa941;
+  color: #ff773b;
+  border-color: #ff773b;
 }
 nav .sub-menu-wrapper {
   position: relative;
@@ -671,7 +732,7 @@ nav .sub-menu-wrapper:hover .sub-menu {
   opacity: 1;
 }
 nav .sub-menu-wrapper .sub-menu {
-  background: #4da9c2;
+  background: #2b5693;
   display: flex;
   opacity: 0;
   pointer-events: none;
@@ -689,26 +750,26 @@ nav .sub-menu-wrapper .sub-menu a {
   transition: background-color 0.1s;
 }
 nav .sub-menu-wrapper .sub-menu a:hover, nav .sub-menu-wrapper .sub-menu a.active {
-  background: #1e697d;
+  background: #ff773b;
 }
 
 footer .social-link a {
   transition: background-color 0.1s;
 }
 footer .social-link a:hover {
-  border: 1px solid #ffa941;
-  color: #ffa941;
+  border: 1px solid #ff773b;
+  color: #ff773b;
 }
 
 #side-nav a:not(.btn-orange, .btn-transparent):hover {
-  color: #ffa941;
+  color: #ff773b;
 }
 #side-nav .social-link a {
   transition: background-color 0.1s;
 }
 #side-nav .social-link a:hover {
-  border: 1px solid #ffa941;
-  color: #ffa941;
+  border: 1px solid #ff773b;
+  color: #ff773b;
 }
 
 .collapsible {
@@ -720,7 +781,7 @@ footer .social-link a:hover {
   transition: color 0.25s, background-color 0.25s, transform 0.25s;
 }
 .collapsible > button:hover {
-  color: #ffa941 !important;
+  color: #ff773b !important;
 }
 .collapsible > button * {
   pointer-events: none;
@@ -730,7 +791,7 @@ footer .social-link a:hover {
   transition: grid-template-rows 0.25s, margin-top 0.25s;
 }
 .collapsible.active > button {
-  color: #ffa941;
+  color: #ff773b;
 }
 .collapsible.active .collapsible-content-wrapper {
   grid-template-rows: 1fr;
@@ -789,7 +850,7 @@ main {
 }
 
 article .collapsible.active button {
-  color: #ffa941;
+  color: #ff773b;
   background: #fff8e7;
 }
 
@@ -821,7 +882,7 @@ aside .collapsible.active .collapsible-content {
   transition: background-color 0.1s;
 }
 .sub-menu-wrapper .sub-menu a:hover, .sub-menu-wrapper .sub-menu a.active {
-  background: #1e697d;
+  background: #2b5693;
 }
 
 .room-category-button:is(.btn-orange) {

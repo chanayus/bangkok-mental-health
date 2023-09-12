@@ -1,9 +1,10 @@
-$deep-blue: #1e697d;
+$deep-blue: #2b5693;
 $light-blue: #4da9c2;
 $light-gray: #f5f9fd;
-$orange: #ffa941;
+$light-cream: #fffcf4;
+$orange: #ff773b;
 $cream: #fff8e7;
-$orange-gradient: linear-gradient(314deg, #ffbc6b 0%, #ffa941 100%);
+$orange-gradient: linear-gradient(314deg, #ffbc6b 0%, #ff773b 100%);
 $orange-radial-gradient: linear-gradient(17deg, #ffc885 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(134deg, #ffdaac 22.22%, #ffc9ba 92.82%);
 
@@ -13,6 +14,7 @@ $colors: (
     "light-gray": $light-gray,
     "orange": $orange,
     "cream": $cream,
+    "light-cream": $light-cream,
     "orange-gradient": $orange-gradient,
     "orange-radial-gradient": $orange-radial-gradient
 );
@@ -33,7 +35,7 @@ $colors: (
 }
 .btn-orange {
     position: relative;
-    background: $orange-gradient;
+    background: $orange;
     padding: 0.6875rem 2rem;
     border-radius: 9999px;
     color: #fff;

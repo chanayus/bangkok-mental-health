@@ -1,7 +1,7 @@
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
-    <footer class="w-full pt-16 pb-11 rounded-t-[4rem] bg-light-blue text-white">
+    <footer class="w-full pt-16 pb-11 rounded-t-[4rem] bg-light-blue relative z-10 text-white">
         <div class="main-container-sm">
             <section class="flex flex-col justify-between gap-10 pb-6 border-b border-white md:items-center md:flex-row">
                 <img src="./images/logo-white.png" alt="" width="220" />

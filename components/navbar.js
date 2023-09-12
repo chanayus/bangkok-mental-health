@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
     <nav id="top-nav" class="fixed top-0 z-30 w-full px-5 xl:px-8">
         <section class="flex items-center justify-between py-4 border-b">
             <a href="../index.html">
-                <img src="./images/logo.png" alt="" width="260" height="63" class="w-[200px] max-w-[35vw]" />
+                <img src="./images/logo-bmhh.png" alt="" width="260" height="145" class="w-[6.25rem] object-contain max-w-[35vw]" />
             </a>
             <!-- Desktop -->
             <div class="items-center hidden xl:flex gap-x-4">
@@ -128,14 +128,14 @@ class Navbar extends HTMLElement {
                 </button>
             </div>
 
-            <button class="text-lg font-medium btn-orange leading-[1.2]">Make an Appointment</button>
+            <button class="text-lg font-medium btn-orange leading-[1.2] shadow-[0px_0px_12px_2px_rgba(0,0,0,0.1)_inset]">Make an Appointment</button>
         </div>
     </nav>
 
     <!-- Mobile Side Navigation -->
     <section id="side-nav-wrapper" class=" opacity-0 fixed w-full h-full bg-[rgba(103,195,221,0.5)] z-40 top-0 flex justify-end">
         <aside id="side-nav" class="relative w-full h-full p-10 overflow-y-auto bg-white md:w-1/2 xl:max-w-[40vw]">
-        <button id="close-side-nav-button" class="absolute top-5 right-10 p-2 z-10">
+        <button id="close-side-nav-button" class="absolute top-5 right-8 p-2 z-10">
             <img src="./icons/close-blue.svg" alt="" width="32" />
         </button>
         <section class="border-b pb-8 mb-8 text-light-blue [&_a,&_button]:font-medium flex flex-col text-xl whitespace-nowrap space-y-10">

@@ -1,7 +1,7 @@
 @import "./theme";
 @import "./splide";
 
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
     .line-clamp-#{$i} {
         display: -webkit-box;
         -webkit-line-clamp: $i;
@@ -25,19 +25,29 @@ html {
 }
 
 .main-container {
-    max-width: 1680px;
+    max-width: 1480px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    @media (max-width: 1480px) {
+        & {
+            max-width: 1220px;
+        }
+    }
 }
 
 .main-container-sm {
-    max-width: 1440px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    @media (max-width: 1480px) {
+        & {
+            max-width: 1024px;
+        }
+    }
 }
 
 button:disabled {
@@ -100,7 +110,7 @@ nav {
             }
         }
         .sub-menu {
-            background: $light-blue;
+            background: $deep-blue;
             display: flex;
             opacity: 0;
             pointer-events: none;
@@ -117,7 +127,7 @@ nav {
                 transition: background-color 0.1s;
                 &:hover,
                 &.active {
-                    background: $deep-blue;
+                    background: $orange;
                 }
             }
         }
