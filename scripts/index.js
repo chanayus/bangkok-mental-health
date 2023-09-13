@@ -48,6 +48,11 @@ const initAnimation = () => {
       },
       "-=1"
     );
+
+  gsap
+    .timeline()
+    .fromTo("#treatment-section", { y: 20, autoAlpha: 0 }, { y: 0, autoAlpha: 1, ease: "expo", duration: 1 }, "+=0.3")
+    .fromTo("#treatment-section a", { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, ease: "expo", stagger: 0.075, duration: 0.75 }, "-=0.55");
 };
 
 const initSlide = () => {
@@ -105,25 +110,25 @@ const initSlide = () => {
       },
       onComplete: () => toggleButtons(true),
     });
-    tl.to(currentElement.querySelector("#human"), { autoAlpha: 0, duration: 0.5 }, 0)
-      .to(currentElement.querySelectorAll(".hero-text"), { autoAlpha: 0, duration: 0.5 }, 0)
+    tl.to(currentElement.querySelector("#banner-image"), { autoAlpha: 0, duration: 0.5 }, 0)
+      .to(currentElement.querySelectorAll(".banner-text"), { autoAlpha: 0, duration: 0.5 }, 0)
       .set(currentElement, { display: "none" })
       .set(nextElement, { display: "flex" })
-      .fromTo(nextElement.querySelector("#human"), { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 0.5 }, 0.55)
-      .fromTo(nextElement.querySelectorAll(".hero-text"), { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.2, ease: "expo", duration: 0.5 }, 0.45);
+      .fromTo(nextElement.querySelector("#banner-image"), { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 0.5 }, 0.7)
+      .fromTo(nextElement.querySelectorAll(".banner-text"), { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.2, ease: "expo", duration: 0.5 }, 0.6);
   };
 
   heroBanners.forEach((element, index) => {
     if (index !== currentBannerPage) {
       gsap.set(element, { display: "none" });
 
-      gsap.set(element.querySelector("#human"), { autoAlpha: 0 });
-      gsap.set(element.querySelectorAll(".hero-text"), { autoAlpha: 0 });
+      gsap.set(element.querySelector("#banner-image"), { autoAlpha: 0 });
+      gsap.set(element.querySelectorAll(".banner-text"), { autoAlpha: 0 });
     } else {
       gsap.set(element, { display: "flex" });
 
-      gsap.fromTo(element.querySelectorAll(".hero-text"), { autoAlpha: 0, y: 25 }, { autoAlpha: 1, delay: 0.3, y: 0, stagger: 0.2, ease: "expo", duration: 0.75 });
-      gsap.fromTo(element.querySelector("#human"), { autoAlpha: 0, y: 40 }, { autoAlpha: 1, delay: 0.5, y: 0, ease: "expo", duration: 1 });
+      gsap.fromTo(element.querySelectorAll(".banner-text"), { autoAlpha: 0, y: 25 }, { autoAlpha: 1, delay: 0.3, y: 0, stagger: 0.2, ease: "expo", duration: 0.75 });
+      gsap.fromTo(element.querySelector("#banner-image"), { autoAlpha: 0, y: 40 }, { autoAlpha: 1, delay: 0.5, y: 0, ease: "expo", duration: 1 });
     }
   });
 
