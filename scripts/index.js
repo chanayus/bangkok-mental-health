@@ -165,7 +165,7 @@ const initSlide = () => {
         padding: { left: "1.25rem", right: "1.25rem" },
         drag: true,
       },
-      1024: {
+      1023: {
         destroy: true,
       },
     },
