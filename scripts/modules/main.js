@@ -90,3 +90,27 @@ seeMoreButtons.forEach((button) =>
     button.nextElementSibling.classList.add("active");
   })
 );
+
+// Navbar Search Desktop
+
+const inputToggle = document.querySelector("#search-input-toggle");
+inputToggle?.addEventListener("click", () => {
+  gsap.to("#search-input", { autoAlpha: 1 });
+
+  inputToggle.removeEventListener("click", () => {
+    gsap.to("#search-input", { autoAlpha: 1 });
+  });
+});
+
+// Navbar Search Mobile
+
+const searchMobileButton = document.querySelector("#search-mobile-button");
+const backButton = document.querySelector("#back-to-menu");
+
+searchMobileButton?.addEventListener("click", () => {
+  gsap.to("#search-mobile-page", { x: 0, ease: "expo", duration: 1 });
+});
+
+backButton?.addEventListener("click", () => {
+  gsap.to("#search-mobile-page", { x: "100%", ease: "expo", duration: 1 });
+});

@@ -738,7 +738,7 @@ nav .page-nav-menu > a, nav .page-nav-menu > div {
   font-size: 1rem;
   border-bottom: 3px solid transparent;
 }
-nav .page-nav-menu > a:hover, nav .page-nav-menu > a.active, nav .page-nav-menu > div:hover, nav .page-nav-menu > div.active {
+nav .page-nav-menu > a:not(:has(#search-input)):hover, nav .page-nav-menu > a.active, nav .page-nav-menu > div:not(:has(#search-input)):hover, nav .page-nav-menu > div.active {
   color: #ff773b;
   border-color: #ff773b;
 }

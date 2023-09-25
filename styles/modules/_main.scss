@@ -112,7 +112,7 @@ nav {
             transition: 0.1s;
             font-size: 1rem;
             border-bottom: 3px solid transparent;
-            &:hover,
+            &:not(:has(#search-input)):hover,
             &.active {
                 color: $orange;
                 border-color: $orange;
