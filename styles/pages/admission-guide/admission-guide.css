@@ -774,7 +774,7 @@ nav .sub-menu-wrapper .sub-menu a:hover, nav .sub-menu-wrapper .sub-menu a.activ
 footer .social-link a {
   transition: background-color 0.1s;
 }
-footer .social-link a:hover {
+footer .social-link a:hover, footer .social-link button:hover {
   border: 1px solid #ff773b;
   color: #ff773b;
 }

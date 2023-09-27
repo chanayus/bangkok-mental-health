@@ -92,14 +92,19 @@ seeMoreButtons.forEach((button) =>
 );
 
 // Navbar Search Desktop
+let searchDesktopShowing = false;
 
 const inputToggle = document.querySelector("#search-input-toggle");
-inputToggle?.addEventListener("click", () => {
-  gsap.to("#search-input", { autoAlpha: 1 });
+const searchInput = document.querySelector("#search-input");
 
-  inputToggle.removeEventListener("click", () => {
-    gsap.to("#search-input", { autoAlpha: 1 });
-  });
+inputToggle?.addEventListener("click", (e) => {
+  searchDesktopShowing = !searchDesktopShowing;
+
+  window.setTimeout(function () {
+    searchInput.querySelector("input").focus();
+  }, 10);
+
+  gsap.to(searchInput, { autoAlpha: searchDesktopShowing ? 1 : 0 });
 });
 
 // Navbar Search Mobile
@@ -114,3 +119,35 @@ searchMobileButton?.addEventListener("click", () => {
 backButton?.addEventListener("click", () => {
   gsap.to("#search-mobile-page", { x: "100%", ease: "expo", duration: 1 });
 });
+
+// Modals
+
+document.querySelector("#modal-toggle")?.addEventListener("click", () => toggleModal("open"));
+
+const toggleModal = (type) => {
+  const modal = document.querySelector("#modal");
+  const modalContent = modal?.querySelector("#modal-content");
+  const cancelButton = modal?.querySelector("#modal-cancel");
+  const confirmButton = modal?.querySelector("#modal-confirm");
+
+  const onCloseHandler = (e) => {
+    if (e.target && !modalContent.contains(e.target) && modalContent) {
+      toggleModal("close");
+      document.removeEventListener("click", onCloseHandler, { capture: true });
+    }
+  };
+
+  if (type === "open" && modal) {
+    gsap.to(modal, { autoAlpha: 1 });
+
+    cancelButton?.addEventListener("click", () => toggleModal("close"));
+    confirmButton?.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggleModal("close");
+    });
+
+    document.addEventListener("click", onCloseHandler, { capture: true });
+  } else if (type === "close" && modal) {
+    gsap.to(modal, { autoAlpha: 0 });
+  }
+};

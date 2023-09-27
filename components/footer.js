@@ -6,9 +6,9 @@ class Footer extends HTMLElement {
             <section class="flex flex-col justify-between gap-10 pb-6 border-b border-white md:items-center md:flex-row">
                 <img src="./images/logo-white.png" alt="" width="220" />
                 <div class="flex gap-x-4 social-link">
-                    <a href="" class="flex items-center justify-center w-10 h-10 border border-white rounded-full">
+                    <button id="modal-toggle" class="flex items-center justify-center w-10 h-10 border border-white rounded-full">
                         <i class="fa-brands fa-facebook"></i>
-                    </a>
+                    </button>
                     <a href="" class="flex items-center justify-center w-10 h-10 border border-white rounded-full">
                         <i class="fa-brands fa-twitter"></i>
                     </a>

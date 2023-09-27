@@ -157,7 +157,7 @@ footer {
         a {
             transition: background-color 0.1s;
         }
-        a:hover {
+        a:hover, button:hover {
             border: 1px solid $orange;
             color: $orange;
         }
